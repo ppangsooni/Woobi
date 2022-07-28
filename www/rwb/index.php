@@ -50,6 +50,6 @@
   <title>Document</title>
 </head>
 <body>
-  <a href="admin/">관리자</a>
+  <a href="admin/">-</a>
 </body>
 </html>

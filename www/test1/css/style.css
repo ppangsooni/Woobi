@@ -32,7 +32,7 @@ a {
 }
 
 
-/*----------------ë§ˆìš°?Š¤ ?š¨ê³?-------------------------------------*/
+/*----------------ë§ˆìš°?ï¿½ï¿½ ?ï¿½ï¿½ï¿½?-------------------------------------*/
 .cursor {
     width: 3rem;
     height: 3rem;
@@ -197,7 +197,7 @@ span:nth-of-type(27) {
     width: 100%;
     /* padding: 1%; */
 }
-/*-------------?™¼ìª? ì»¨í…ì¸ ë??ë¶?(ë°°ë„ˆ?´ë¯¸ì??)-------------------------*/
+/*-------------?ï¿½ï¿½ï¿½? ì»¨í…ì¸ ï¿½??ï¿½?(ë°°ë„ˆ?ï¿½ï¿½ë¯¸ï¿½??)-------------------------*/
 .sidebanner {
     width: 45%;
     height: 100vh;
@@ -292,7 +292,7 @@ span:nth-of-type(27) {
     font-size: 5rem;
     font-family: 'Kanginhan';
 }
-/*--posterCover ?˜¸ë²„ì‹œ ë³´ì´?Š” ?´ë¯¸ì??---*/
+/*--posterCover ?ï¿½ï¿½ë²„ì‹œ ë³´ì´?ï¿½ï¿½ ?ï¿½ï¿½ë¯¸ï¿½??---*/
 .poster {
     display: none;
     width: 98%;
@@ -303,7 +303,7 @@ span:nth-of-type(27) {
     width: 100%;
     height: 100%;
 }
-/*-------------?˜¤ë¥¸ìª½ ì»¨í…ì¸ ë??ë¶?()-------------------------*/
+/*-------------?ï¿½ï¿½ë¥¸ìª½ ì»¨í…ì¸ ï¿½??ï¿½?()-------------------------*/
 
 .contentWrap {
     width: 55%;
@@ -318,7 +318,7 @@ span:nth-of-type(27) {
     display:none;
   }
 
-/*-----------?˜¤ë¥¸ìª½ > Home */
+/*-----------?ï¿½ï¿½ë¥¸ìª½ > Home */
 .contHome {
     width: 100%;
     height: auto;
@@ -349,12 +349,12 @@ span:nth-of-type(27) {
     width: 100%;
     filter: grayscale(100%) ;
 }
-/*ë§ˆìš°?Š¤?˜¸ë²?: ?•„?„° ë³??™˜*/
+/*ë§ˆìš°?ï¿½ï¿½?ï¿½ï¿½ï¿½?: ?ï¿½ï¿½?ï¿½ï¿½ ï¿½??ï¿½ï¿½*/
 .contHomeBox>img:hover {
     filter: grayscale(0%) contrast(110%);
 }
 
-/*-------------?˜¤ë¥¸ìª½ > About*/
+/*-------------?ï¿½ï¿½ë¥¸ìª½ > About*/
 .contAbout {
     width: 100%;
     display: flex;
@@ -467,7 +467,7 @@ span:nth-of-type(27) {
 .admissionFeeTab :nth-child(2n-1) {
     background-color: rgb(202, 198, 193);
 }
-/*-------------?˜¤ë¥¸ìª½ > About the artist*/
+/*-------------?ï¿½ï¿½ë¥¸ìª½ > About the artist*/
 .contArtist {
     width: 100%;
     display: flex;
@@ -530,7 +530,7 @@ span:nth-of-type(27) {
     font-size: small;
     margin-bottom: 1%;
 }
-/*-------------?˜¤ë¥¸ìª½ > Art gallery*/
+/*-------------?ï¿½ï¿½ë¥¸ìª½ > Art gallery*/
 .contArt {
     width: 100%;
     display: flex;
@@ -561,7 +561,7 @@ span:nth-of-type(27) {
     filter: grayscale(0%) contrast(110%);
 }
 
-/*-------------?˜¤ë¥¸ìª½ > Event*/
+/*-------------?ï¿½ï¿½ë¥¸ìª½ > Event*/
 
 .contEvent {
     width: 100%;
@@ -990,7 +990,7 @@ select:hover{
 .Event_popup2_Close>span:nth-child(2) {
     transform: rotate( -45deg ) translate( -5% , 200% );
 }
-/*-------------?˜¤ë¥¸ìª½ > footer*/
+/*-------------?ï¿½ï¿½ë¥¸ìª½ > footer*/
 footer{
     height: auto;
     width: 100%;
