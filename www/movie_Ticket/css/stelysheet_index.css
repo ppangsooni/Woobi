@@ -85,8 +85,9 @@ html,body{
 
 .bg_macbook {
     background: transparent url("https://i.ibb.co/PYr4rTt/ipd1.png") no-repeat center center;
-    width: 640px;
+    width: 34%;
     height: 90%;
+    /* height: 839px; */
     top: 5%;
     left: 30%;
     position: absolute;
@@ -95,10 +96,12 @@ html,body{
 }
 .screen {
     position: absolute;
-    top: 10.5%;
-    left:  62px;
-    width: 515px;
-    height: 678px;
+    top: 8.5%;
+    left:  9.5%;
+    width: 80.5%;
+    height: 81%;
+    /* width: 515px;
+    height: 678px; */
     border: 1px saddlebrown solid;
     overflow-y: scroll;
 }
@@ -171,37 +174,34 @@ html,body{
     margin: 1% 2%;
 
 }
-@media all and (max-width:1680px) {
+/* @media all and (max-width:1680px) {
     .screen {
-        top: 8%;
-        left:  80px;
-        width: 480px;
-        height: 638px;
+        height: 79%;
     }
 }
-@media all and (max-width:1480px) {
+@media all and (max-width:1580px) {
     .bg_macbook {
+        width: 40%;
         left: 28%;
+    }
+    .screen {
+        height: 79%;
     }
     
 }
 @media all and (max-width:1080px) {
-    .bg_macbook {
-        left: 18%;
-    }
+
     
 }
 @media all and (max-width:980px) {
-    .bg_macbook {
-        left: 10%;
-    }
+
     
-}
+} */
 @media all and (max-width:680px) {
     html,body{
     overflow: hidden;
     }
-    .bg_macbook {
+    /* .bg_macbook {
         width: 100%;
         height: 100%;
         top: 7%;
@@ -212,7 +212,7 @@ html,body{
         left: 0%;
         width: 99%;
         height: 90%;
-    }
+    } */
 
     
 }
