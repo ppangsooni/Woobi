@@ -8,20 +8,19 @@ html,body{
     position: fixed;
     top: 40%;
     right: 0;
-    width: 10%;
+    width: 6rem;
     height: 30%;
     border: 1px salmon solid;
 }
 .bgImg_scroll_t {
     content: "";
     position: relative;
-    top: 4rem;
-    left: 53%;
-    width: 18%;
+    top: 2rem;
+    width: 2rem;
     height: 5%;
     border: 4px rgb(114, 114, 114) solid; 
     border-radius: 30%;
-    transform: rotate( 225deg ) translate( 52% , 132% );
+    transform: rotate( -46deg ) translate( -5% , 135% );
 }
 .bgImg_scroll_t::after {
     content: "";
@@ -31,14 +30,14 @@ html,body{
     height: 100%;
     border: 4px rgb(114, 114, 114) solid; 
     border-radius: 30%;
-    transform: rotate( -90deg ) translate( 50% , 150% );
+    transform: rotate( 95deg ) translate( 30% , -185% );
 }
 .bgImg_scroll_m{
     content: "";
     position: relative;
-    top: 6rem;
-    left: 35%;
-    width: 32%;
+    top: 4.8rem;
+    left: 0.5rem;
+    width: 3rem;
     height: 4.5rem;
     border: 6px rgb(114, 114, 114) solid; 
     border-radius: 45%;  
@@ -57,13 +56,13 @@ html,body{
 .bgImg_scroll_b {
     content: "";
     position: relative;
-    top: 8rem;
-    left: 33%;
-    width: 18%;
+    top: 6rem;
+
+    width: 2rem;
     height: 5%;
     border: 4px rgb(114, 114, 114) solid; 
     border-radius: 30%;
-    transform: rotate( 45deg ) translate( 52% , 132% );
+    transform: rotate( 44deg ) translate( 52% , 132% );
 }
 .bgImg_scroll_b::after {
     content: "";
@@ -79,95 +78,80 @@ html,body{
     width: 100%;
     height: 100%;
     background-color: aliceblue;
+    position: relative;
 }
 
 .bg_macbook {
-    position: relative;
     background: transparent url("https://i.ibb.co/PYr4rTt/ipd1.png") no-repeat center center;
-    width: 100%;
-    height: 100%;
-
+    width: 640px;
+    height: 90%;
+    top: 5%;
+    left: 30%;
+    position: absolute;
+    border: 1px solid red;
+	background-size: contain;
 }
 .wrap {
     position: absolute;
-    top: 14.3%;
-    left: 36.5%;
-    width: 32.25rem;
-    height: 42.5rem;
+    top: 10.5%;
+    left:  62px;
+    width: 515px;
+    height: 678px;
     border: 1px saddlebrown solid;
+    overflow-y: scroll;
 }
-@media all and (max-width:1680px) {
-    .wrap {
-        top: 6.3%;
-        left: 34%;
-    }
-    
-}
-@media all and (max-width:1580px) {
-    .wrap {
-        left: 33%;
-    }
-    
-}
+
 @media all and (max-width:1480px) {
-    .wrap {
-        left: 32.3%;
-    }
-    
-}
-@media all and (max-width:1380px) {
-    .wrap {
-        left: 31%;
-    }
-    
-}
-@media all and (max-width:1280px) {
-    .wrap {
-        left: 29%;
-    }
-    
-}
-@media all and (max-width:1180px) {
-    .wrap {
+    .bg_macbook {
         left: 28%;
     }
     
 }
 @media all and (max-width:1080px) {
-    .wrap {
-        left: 25.5%;
+    .bg_macbook {
+        left: 18%;
     }
     
 }
 @media all and (max-width:980px) {
-    .wrap {
-        left: 24%;
-    }
-    
-}
-@media all and (max-width:980px) {
-    .wrap {
-        left: 22.4%;
-    }
-    
-}
-@media all and (max-width:880px) {
-    .wrap {
-        left: 20.4%;
-    }
-    
-}
-@media all and (max-width:780px) {
-    .wrap {
-        left: 14.5%;
+    .bg_macbook {
+        left: 10%;
     }
     
 }
 @media all and (max-width:680px) {
-    .bg_macbook {
-    background: none;
-    border: 1px solid saddlebrown;
-    width: 98%;
+    html,body{
+    overflow: hidden;
     }
+    .bg_macbook {
+        width: 105%;
+        height: 100%;
+        top: 0%;
+        left: -3%;
+    }
+    .wrap {
+        width: 82%;
+        height: 740px;
+        /* width: 98%; */
+    }
+/* 
+    .bg_macbook {
+        background: transparent url("https://i.ibb.co/PYr4rTt/ipd1.png") no-repeat center center;
+        width: 640px;
+        height: 90%;
+        top: 5%;
+        left: 30%;
+        position: absolute;
+        border: 1px solid red;
+        background-size: contain;
+    }
+    
+        position: absolute;
+        top: 10.5%;
+        left:  62px;
+        width: 515px;
+        height: 678px;
+        border: 1px saddlebrown solid;
+    } */
     
 }
