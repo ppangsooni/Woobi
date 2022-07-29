@@ -84,15 +84,17 @@ html,body{
 }
 
 .bg_macbook {
-    background: transparent url("https://i.ibb.co/PYr4rTt/ipd1.png") no-repeat center center;
     width: 34%;
     height: 90%;
-    /* height: 839px; */
     top: 5%;
     left: 30%;
     position: absolute;
     border: 1px solid red;
 	background-size: contain;
+}
+.bg_macbook>img {
+    width: 100%;
+    height: 100%;
 }
 .screen {
     position: absolute;
@@ -174,34 +176,80 @@ html,body{
     margin: 1% 2%;
 
 }
-/* @media all and (max-width:1680px) {
-    .screen {
-        height: 79%;
+@media all and (max-width:1680px) {
+    .bg_macbook {
+        width: 38%;
+        left: 28%;
     }
 }
 @media all and (max-width:1580px) {
     .bg_macbook {
         width: 40%;
-        left: 28%;
+        left: 26%;
     }
-    .screen {
-        height: 79%;
+}
+@media all and (max-width:1480px) {
+    .bg_macbook {
+        width: 44%;
+        left: 24%;
     }
-    
+}
+@media all and (max-width:1380px) {
+    .bg_macbook {
+        width: 48%;
+        left: 22%;
+    }
+}
+@media all and (max-width:1280px) {
+    .bg_macbook {
+        width: 52%;
+        left: 20%;
+    }
+}
+@media all and (max-width:1180px) {
+    .bg_macbook {
+        width: 54%;
+        left: 18%;
+    }
 }
 @media all and (max-width:1080px) {
-
-    
+    .bg_macbook {
+        width: 58%;
+        left: 14%;
+    }
 }
 @media all and (max-width:980px) {
-
+    .bg_macbook {
+        width: 60%;
+        left: 10%;
+    }
     
-} */
+}
+@media all and (max-width:900px) {
+    .bg_macbook {
+        width: 68%;
+    }
+    
+}
+@media all and (max-width:880px) {
+    .bg_macbook {
+        width: 76%;
+        left: 6%;
+    }
+    
+}
+@media all and (max-width:780px) {
+    .bg_macbook {
+        width: 90%;
+        left:   4%;
+    }
+    
+}
 @media all and (max-width:680px) {
     html,body{
     overflow: hidden;
     }
-    /* .bg_macbook {
+    .bg_macbook {
         width: 100%;
         height: 100%;
         top: 7%;
@@ -212,7 +260,7 @@ html,body{
         left: 0%;
         width: 99%;
         height: 90%;
-    } */
+    }
 
     
 }
