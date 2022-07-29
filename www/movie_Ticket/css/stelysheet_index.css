@@ -100,7 +100,14 @@ html,body{
     border: 1px saddlebrown solid;
     overflow-y: scroll;
 }
-
+@media all and (max-width:1680px) {
+    .wrap {
+        top: 8%;
+        left:  80px;
+        width: 480px;
+        height: 638px;
+    }
+}
 @media all and (max-width:1480px) {
     .bg_macbook {
         left: 28%;
