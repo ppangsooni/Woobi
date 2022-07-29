@@ -130,11 +130,10 @@ html,body{
         left: 0%;
     }
     .wrap {
-        top: 0%;
+        top: 8%;
         left: 0%;
         width: 99%;
-        height: 100%;
-        /* width: 98%; */
+        height: 85%;
     }
 /* 
     .bg_macbook {
