@@ -182,15 +182,7 @@ html,body{
     margin: 1% 2%;
 
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
+
 @media all and (max-width:1680px) {
     .bg_macbook {
         width: 38%;
