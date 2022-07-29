@@ -114,7 +114,13 @@ html,body{
     display: flex;
     flex-direction: column;
 }
+/* header{
+    position: fixed;
+    width: 48%;
+    height: auto;
+} */
 .header_top {
+    
     width: 90%;
     height: 2rem;
     display: flex;
@@ -176,6 +182,15 @@ html,body{
     margin: 1% 2%;
 
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
 @media all and (max-width:1680px) {
     .bg_macbook {
         width: 38%;
@@ -260,6 +275,9 @@ html,body{
         left: 0%;
         width: 99%;
         height: 90%;
+    }
+    .header_top_right {
+        padding-left: 10%;
     }
 
     
