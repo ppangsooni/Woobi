@@ -49,7 +49,7 @@
                                 <li><a href="#">패스트오더</a></li>
                                 <li><a href="#">@BaAB</a></li>
                             </ul>
-                        </div><input type="email">
+                        </div>
                     </header>
                     <nav class="menuSlide">
                         <div class="menuPage">
