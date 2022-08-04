@@ -8,6 +8,7 @@ html,body{
 }
 a {
     text-decoration: none;
+    color: black;
 }
 .bgImg{
     position: fixed;
@@ -118,8 +119,8 @@ a {
     display: flex;
     flex-direction: column;
 }
-
-header {
+/* index>header() 康开 */
+.header {
     width: 100%;
     top: 0%;
     position: sticky;
@@ -193,29 +194,39 @@ header {
     margin: 1% 2%;
 
 }
-nav {
+/* index>nav() 康开 */
+/* index>nav>header() 康开 */
+.menuSlide {
     right: 0;
     width: 90%;
-    height: 100%;
+    height: auto;
     position: absolute;
     /* display: none; */
 }
 .menuPage {
     width: 100%;
-    height: 100%;
+    height: auto;
     border: 1px salmon solid;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* >nav(/header_menu.php) 康开 */
+.menuHeader {
+    width: 100%;
+    height: 10rem;
 }
 .menuPage_top {
     width: 96%;
-    height: 20%;
+    height: 100%;
     background-color: #1E2C5C;
     clear: both;
     padding: 2%;
-
 }
 .menuPage_top>div {
     float: left;
     width: 45%;
+    height: auto;
     padding: 0% 2%;
 }
 .menuPage_topLeft>img {
@@ -227,6 +238,13 @@ nav {
     text-align: right;
     position: relative;
 }
+.menuPage_topRight>a>img  {
+    height: 2em;
+    width: 2em;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
 .menuPage_topRight>img  {
     height: 2em;
     width: 2em;
@@ -235,11 +253,11 @@ nav {
     border-radius: 50%;
 }
 .menuPage_login {
-    width: 15rem;
-    left: 22%;
-    top: 15%;
+    width: 60%;
+    height: 7rem;
+    left: 20%;
+    top: 8%;
     position: absolute;
-    height: 5rem;
     padding: 2%;
     border: 1px red solid;
     border-radius: 8px;
@@ -250,35 +268,50 @@ nav {
 }
 .menuPage_login>div {
     margin-top: 5%;
-    
+    text-align: center; 
 }   
-.menuPage_login>div:nth-child(2) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.menuPage_login>div>li {
+    list-style: none;
 }
-.menuPage_bottom {
-    width: 96%;
-    height: 60%;
-    padding: 2%;
-    border: 1px red solid;
+.userKeyup {
+    font-size: larger;
+}
+.userKeyup>span {
+    color: white;
+    background-color: #1E2C5C;
+}
+.userKeyup:hover{
+    background-color: wheat;
+}
+/* index>nav>section() 康开 */
+.menuSection {
+    width: 100%;
+    height: 70rem;
     background-color: #eeeeee;
-    padding-top: 15%;
 }
-
-.menuPage_b_quickList {
+.menuSection_un {
     width: 96%;
-    height: 18%;
+    height: 10%;
+    content: "";
+}
+.menuSection_top {
+    width: 96%;
+    height: 10%;
+    padding: 2%;
+    /* border: 1px red solid; */
+}
+.menuS_t_quickList {
+    width: 96%;
+    height: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items:center;
-    background-color: aqua;
     padding: 2%;
-
 }
-.menuPage_b_quickList>a>div {
+.menuS_t_quickList>a>div {
+    width: 96%;
+    height: 96%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,18 +321,105 @@ nav {
     border: 1px transparent solid;
     border-radius: 25% 5% 25% 5%;
 }
-.menuPage_b_quickList>a>div>img {
+.menuS_t_quickList>a>div>img {
     display: block;
     width: 2rem;
     height: 2rem;
 }
+.menuSection_center {
+    width: 96%;
+    height: 70%;
+    padding: 0% 2%;
+    background-color: #eeeeee;
+
+}
+.menuSection_center>div {
+    width: 96%;
+    height: 96%;
+    margin: 0;
+    padding: 0 2%;
+    border-top: white;
+    border-bottom: white;
+}
+.menuSection_center>div>ul {
+    width: 96%;
+    height: 80%;
+    padding: 0% 2%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding-inline-start:0%;
+}
+.menuSection_center>div>ul>div {
+    width: 40%;
+    height: 96%;
+    padding: 0 5%;
+}
+.menuSection_center>div>ul>div>li {
+    width: 90%;
+    height: 10%;
+    padding: 1% 10%;
+}
+.menuSection_center>div>ul>div>li:hover {
+    background-color: wheat;
+}
+.menuSection_center>div>ul>div>li>a {
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: space-between;
+    
+}
+.menuSection_center>div>ul>div>li>a>span {
+    display: block;
+}
+
+.menuSection_center>div>ul>div>li>a>img {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: white;
+}
+.menuSection_bottom {
+    width: 96%;
+    height: 10%;
+    padding: 2%;
+    border: 1px red solid;
+    background-color: #eeeeee;
+}
 .menuPage_aticle {
     width: 96%;
-    height: 3rem;
+    height: 10%;
     padding: 2%;
     border: 1px red solid;
     background-color: white;
 }
+.menuFooter {
+    width: 96%;
+    height: 7rem;
+}
+.menuFooter>div {
+    padding: 2%;
+}
+/* index>section() 康开 */
+.section {
+    width: 100%;
+    height: 80%;
+    background-color: wheat;
+}
+/* index>footer() 康开 */
+.footer {
+    width: 100%;
+    height: 10%;
+}
+.footer>div {
+    padding: 2%;
+}
+
 
 
 
@@ -309,6 +429,18 @@ nav {
         width: 38%;
         left: 28%;
     }
+    /* .menuSection_un {
+        height: 7rem;
+    } */
+    .menuSection_center>div>ul>div>li>a {
+        justify-content:start;
+        
+    }
+    .menuPage_ticketBymovie {
+        width: 20%;
+        height: 100%;
+    }
+
 }
 @media all and (max-width:1580px) {
     .bg_macbook {
@@ -375,7 +507,7 @@ nav {
 }
 @media all and (max-width:680px) {
     html,body{
-    overflow: hidden;
+        overflow: hidden;
     }
     .bg_macbook {
         width: 100%;

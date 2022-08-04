@@ -113,14 +113,47 @@ a {
 }
 .wrap {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: sandybrown;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
-
+/* index_from>header() 康开 */
+.header {
+    width: 100%;
+    height: 18%;
+    padding: 2%;
+    background-color: #1E2C5C;
+}
+/* >header(/header_form.php) 康开 */
+.popPage_top {
+    width: 98%;
+    height: 98%;
+    clear: both;
+}
+.popPage_top>div {
+    width: 100%;
+    height: auto;
+    float: left;
+    
+}
+.popPage_top>div:nth-child(1)>a>img {
+    width: 3rem;
+    height: 3rem;
+    
+}
+/* index_from>section() 康开 */
+.section {
+    width: 100%;
+    height: 70%;
+    padding: 2%;
+}
+/* index_from>footer() 康开 */
+.footer {
+    width: 100%;
+    height: 10%;
+    padding: 2%;
+}
 
 
 
@@ -214,7 +247,3 @@ a {
 }
 
 /* login.php */
-label>img {
-    width: 30px;
-    height: 30px;
-}
