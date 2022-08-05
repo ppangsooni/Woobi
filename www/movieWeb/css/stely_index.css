@@ -208,14 +208,251 @@ a {
 }
 
 /* ------index>menu(nav)---------------------------- */
-/* index>nav>header(stely_menu.css 별도로 관리) 영역 */
-/* .menuSlide {
+/* index>nav>header() 영역 */
+/* <메인메뉴_헤더&로그인 영역> */
+.menuSlide {
     right: 0;
     width: 90%;
     height: auto;
     position: absolute;
     display: none;
-} */
+}
+.menuPage {
+    width: 100%;
+    height: auto;
+    border: 1px salmon solid;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* >nav(/header_menu.php) 영역 */
+.menuHeader {
+    width: 100%;
+    height: 10rem;
+}
+.menuPage_top {
+    width: 96%;
+    height: 100%;
+    background-color: #1E2C5C;
+    clear: both;
+    padding: 2%;
+}
+.menuPage_top>div {
+    float: left;
+    width: 45%;
+    height: auto;
+    padding: 0% 2%;
+}
+.menuPage_topLeft>img {
+    height: 2.5em;
+    width: 5em;
+}
+.menuPage_topRight {
+    margin-top: 2%;
+    text-align: right;
+    position: relative;
+}
+.menuPage_topRight>a>img  {
+    height: 2em;
+    width: 2em;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.menuPage_topRight>img  {
+    height: 2em;
+    width: 2em;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.menuPage_login {
+    width: 60%;
+    height: 7rem;
+    left: 20%;
+    top: 8%;
+    position: absolute;
+    padding: 2%;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.menuPage_login>div {
+    margin-top: 3%;
+    text-align: center; 
+}   
+.menuPage_login>div>li {
+    list-style: none;
+}
+.userKeyup {
+    font-size: larger;
+}
+.userKeyup>span {
+    color: white;
+    background-color: #1E2C5C;
+}
+.userKeyup:hover{
+    background-color: wheat;
+}
+/* index>nav>section() 영역 */
+.menuSection {
+    width: 100%;
+    background-color: #eeeeee;
+}
+.menuSection_un {
+    width: 96%;
+    height: 5rem;
+    content: "";
+}
+/* <메인메뉴_바로가기메뉴 영역> */
+.menuSection_top {
+    width: 96%;
+    padding: 2%;
+}
+.menuS_t_quickList {
+    width: 96%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    padding: 2%;
+    padding-bottom: 5%;
+}
+.menuS_t_quickList>a>div {
+    width: 100%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1E2C5C;
+    font-size:x-large;
+    background-color: white;
+    border: 1px transparent solid;
+    border-radius: 25% 5% 25% 5%;
+}
+.menuS_t_quickList>a>div>img {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+/* <메인메뉴_메인메뉴 영역> */
+.menuSection_center {
+    width: 96%;
+    padding: 0% 2%;
+    background-color: #eeeeee;
+}
+.menuSection_center>div {
+    width: 96%;
+    margin: 0;
+    padding: 2%;
+    border-top: 1px solid  white;
+    border-bottom: 1px solid  white;
+}
+.menuSection_center>div>ul {
+    width: 96%;
+    padding: 2%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+.menuSection_center>div>ul>div {
+    width: 40%;
+    padding: 0 5%;
+}
+.menuSection_center>div>ul>div>li {
+    width: 90%;
+    padding: 1% 10%;
+}
+.menuSection_center>div>ul>div>li:hover {
+    background-color: wheat;
+}
+.menuSection_center>div>ul>div>li>a {
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    color: #1E2C5C;
+    font-size: larger;    
+}
+.menuSection_center>div>ul>div>li>a>span {
+    display: block;
+}
+
+.menuSection_center>div>ul>div>li>a>img {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: white;
+}
+/* <메인메뉴_SNS바로가기 영역> */
+.menuSection_bottom {
+    width: 96%;
+    padding: 4%;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menuSection_b_snsBox {
+    padding: 2%;
+    background-color: white;
+    border: 1px transparent solid;
+    border-radius: 25% 5% 25% 5%;
+}
+
+.menuSection_b_snsBox>a {
+    padding-top: 1%;
+    color: #1E2C5C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuSection_b_snsBox>a>p {
+    margin: 0;
+}
+.menuSection_b_snsicon {
+    width: 2.5rem;
+    border: 1px transparent solid;
+    border-radius: 50%;
+}
+/* <메인메뉴_광고 영역> */
+.menuAticle {
+    width: 96%;
+    padding: 2%;
+    background-color: white;
+}
+.menuAticle_banner {
+    max-height: 6rem;
+    overflow: hidden;
+}
+.menuAticle_banner>img {
+    max-height: initial;
+    width: 100%;
+    margin-top: -15%;
+}
+/* <메인메뉴_footer 영역> */
+.menuFooter {
+    width: 98%;
+    height: 2.5rem;
+    background-color: gray;
+}
+.menuFooter>div {
+    padding: 2%;
+    color: white;
+}
+.menuFooter>div>a>span {
+    padding: 2%;
+    color: white;
+}
 
 
 
@@ -319,6 +556,27 @@ a {
         left: 0%;
         width: 99%;
         height: 90%;
+    }
+        /* >nav(/header_menu.php) 영역 */
+    /* 로그인 영역 사이즈 변경 */
+    .menuPage_login {
+        top: 12%;
+        left: 10%;
+        width: 80%;
+    }
+    /* index>nav>section() 영역 */
+    /* 메인메뉴 아이콘 사이즈 변경 */
+    .menuSection_center>div>ul>div {
+        width: 46%;
+        padding: 0 1%;
+    }
+    .menuSection_center>div>ul>div>li>a>img {
+        width: 2rem;
+        height: 2rem;
+    }
+    /* SNS계정 아이콘 사이즈 변경 */
+    .menuSection_b_snsicon {
+        width: 2rem;
     }
 
 }

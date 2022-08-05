@@ -13,7 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/stely_form.css">
-    <link rel="stylesheet" type="text/css" href="./css/stely_menu.css">
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/swHGtC0/logo1.png">
     <title>회원가입</title>
 </head>
@@ -105,6 +104,8 @@
     </div>
     <!-- 내부 자바스크립트 작성 -->
     <script>
+
+
         
         function submitForm(){
  
