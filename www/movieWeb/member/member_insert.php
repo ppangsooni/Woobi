@@ -37,7 +37,7 @@ include "../lib/dbconn.php";
     //회원정보 insert
  
     //insert 쿼리문
-    $sql= "INSERT INTO member(userId, userPassword, userName, tel, birth, email, grade, userPoint,create_at,) VALUES('$userId','$userPassword','$userName','$tel','$birth','$email','$create_at','5','0')";
+    $sql= "INSERT INTO member(userId, userPassword, userName, tel, birth, email, grade, userPoint) VALUES('$userId','$userPassword','$userName','$tel','$birth','$email','5','0')";
  
     // $result = $conn -> query($sql);
     // 쿼리문 실행
@@ -48,7 +48,7 @@ include "../lib/dbconn.php";
     echo "
         <script>
         window.location.href='../index.php';
-        alert('가입이 완료되었습니다. &#9787;')
+        alert('가입이 완료되었습니다.;')
         </script>
     "
     ;

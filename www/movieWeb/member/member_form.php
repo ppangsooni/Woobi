@@ -13,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/stely_form.css">
+    <link rel="stylesheet" type="text/css" href="./css/stely_menu.css">
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/swHGtC0/logo1.png">
     <title>회원가입</title>
 </head>
@@ -32,10 +33,10 @@
             <img src="https://i.ibb.co/PYr4rTt/ipd1.png">
             <div class="screen">
                 <div class="wrap">
-                    <header class="header">
+                    <header class="pop_header">
                             <?php include "../lib/header_form.php" ?>
                     </header>
-                    <section class="section">
+                    <section class="pop_section">
                         <div id="main_content">
                             <div id="join_box">
                                 <!-- DB의 member테이블에 저장하는 member_insert.php에 입력값들 전달하도록 -->
@@ -94,9 +95,10 @@
                             </div>
                         </div>
                     </section>
-                    <footer class="footer">
-
+                    <footer class="pop_footer">
+                        <?php include "../lib/footer_form.php" ?>
                     </footer>
+                    <!---------------menu(nav)------------------------------------------------>
                 <div>
             </div>
         </div>
