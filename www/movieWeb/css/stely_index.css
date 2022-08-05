@@ -106,8 +106,6 @@ a {
     left:  9.5%;
     width: 80.5%;
     height: 81%;
-    /* width: 515px;
-    height: 678px; */
     border: 1px saddlebrown solid;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -194,8 +192,9 @@ a {
     margin: 1% 2%;
 
 }
-/* index>nav() 영역 */
+/* ------index>menu(nav)---------------------------- */
 /* index>nav>header() 영역 */
+/* <메인메뉴_헤더&로그인 영역> */
 .menuSlide {
     right: 0;
     width: 90%;
@@ -259,7 +258,6 @@ a {
     top: 8%;
     position: absolute;
     padding: 2%;
-    border: 1px red solid;
     border-radius: 8px;
     background-color: white;
     display: flex;
@@ -267,7 +265,7 @@ a {
     align-items:center;
 }
 .menuPage_login>div {
-    margin-top: 5%;
+    margin-top: 3%;
     text-align: center; 
 }   
 .menuPage_login>div>li {
@@ -286,19 +284,17 @@ a {
 /* index>nav>section() 영역 */
 .menuSection {
     width: 100%;
-    height: 70rem;
     background-color: #eeeeee;
 }
 .menuSection_un {
     width: 96%;
-    height: 10%;
+    height: 5rem;
     content: "";
 }
+/* <메인메뉴_바로가기메뉴 영역> */
 .menuSection_top {
     width: 96%;
-    height: 10%;
     padding: 2%;
-    /* border: 1px red solid; */
 }
 .menuS_t_quickList {
     width: 96%;
@@ -308,15 +304,17 @@ a {
     justify-content: space-around;
     align-items:center;
     padding: 2%;
+    padding-bottom: 5%;
 }
 .menuS_t_quickList>a>div {
-    width: 96%;
+    width: 100%;
     height: 96%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #1E2C5C;
+    font-size:x-large;
     background-color: white;
     border: 1px transparent solid;
     border-radius: 25% 5% 25% 5%;
@@ -326,41 +324,34 @@ a {
     width: 2rem;
     height: 2rem;
 }
+/* <메인메뉴_메인메뉴 영역> */
 .menuSection_center {
     width: 96%;
-    height: 70%;
     padding: 0% 2%;
     background-color: #eeeeee;
-
 }
 .menuSection_center>div {
     width: 96%;
-    height: 96%;
     margin: 0;
-    padding: 0 2%;
-    border-top: white;
-    border-bottom: white;
+    padding: 2%;
+    border-top: 1px solid  white;
+    border-bottom: 1px solid  white;
 }
 .menuSection_center>div>ul {
     width: 96%;
-    height: 80%;
-    padding: 0% 2%;
+    padding: 2%;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-items: center;
     align-items: center;
-    margin: 0;
-    padding-inline-start:0%;
 }
 .menuSection_center>div>ul>div {
     width: 40%;
-    height: 96%;
     padding: 0 5%;
 }
 .menuSection_center>div>ul>div>li {
     width: 90%;
-    height: 10%;
     padding: 1% 10%;
 }
 .menuSection_center>div>ul>div>li:hover {
@@ -370,8 +361,8 @@ a {
     display: flex;
     flex-direction: row;
     align-items:center ;
-    justify-content: space-between;
-    
+    color: #1E2C5C;
+    font-size: larger;    
 }
 .menuSection_center>div>ul>div>li>a>span {
     display: block;
@@ -384,37 +375,79 @@ a {
     border-radius: 50%;
     background-color: white;
 }
+/* <메인메뉴_SNS바로가기 영역> */
 .menuSection_bottom {
     width: 96%;
-    height: 10%;
-    padding: 2%;
-    border: 1px red solid;
+    padding: 4%;
     background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-.menuPage_aticle {
-    width: 96%;
-    height: 10%;
+.menuSection_b_snsBox {
     padding: 2%;
-    border: 1px red solid;
+    background-color: white;
+    border: 1px transparent solid;
+    border-radius: 25% 5% 25% 5%;
+}
+
+.menuSection_b_snsBox>a {
+    padding-top: 1%;
+    color: #1E2C5C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuSection_b_snsBox>a>p {
+    margin: 0;
+}
+.menuSection_b_snsicon {
+    width: 2.5rem;
+    border: 1px transparent solid;
+    border-radius: 50%;
+}
+/* <메인메뉴_광고 영역> */
+.menuAticle {
+    width: 96%;
+    padding: 2%;
     background-color: white;
 }
+.menuAticle_banner {
+    max-height: 6rem;
+    overflow: hidden;
+}
+.menuAticle_banner>img {
+    max-height: initial;
+    width: 100%;
+    margin-top: -15%;
+}
+/* <메인메뉴_footer 영역> */
 .menuFooter {
-    width: 96%;
-    height: 7rem;
+    width: 98%;
+    height: 2.5rem;
+    background-color: gray;
 }
 .menuFooter>div {
     padding: 2%;
+    color: white;
+}
+.menuFooter>div>a>span {
+    padding: 2%;
+    color: white;
 }
 /* index>section() 영역 */
 .section {
     width: 100%;
     height: 80%;
+
     background-color: wheat;
 }
 /* index>footer() 영역 */
 .footer {
     width: 100%;
-    height: 10%;
 }
 .footer>div {
     padding: 2%;
@@ -429,16 +462,18 @@ a {
         width: 38%;
         left: 28%;
     }
-    /* .menuSection_un {
+    .menuSection_un {
         height: 7rem;
-    } */
+    }
     .menuSection_center>div>ul>div>li>a {
         justify-content:start;
         
     }
-    .menuPage_ticketBymovie {
-        width: 20%;
-        height: 100%;
+    .menuS_t_quickList>a>div {
+        font-size: smaller;
+    }
+    .menuSection_center>div>ul>div>li>a {
+        font-size: smaller;
     }
 
 }
@@ -521,6 +556,25 @@ a {
         width: 99%;
         height: 90%;
     }
+    /* >nav(/header_menu.php) 영역 */
+    /* 로그인 영역 사이즈 변경 */
+    .menuPage_login {
+        top: 12%;
+        left: 10%;
+        width: 80%;
+    }
+    /* index>nav>section() 영역 */
+    /* 메인메뉴 아이콘 사이즈 변경 */
+    .menuSection_center>div>ul>div {
+        width: 46%;
+        padding: 0 1%;
+    }
+    .menuSection_center>div>ul>div>li>a>img {
+        width: 2rem;
+        height: 2rem;
+    }
+    /* SNS계정 아이콘 사이즈 변경 */
+    .menuSection_b_snsicon {
+        width: 2rem;
+    }
 }
-
-/* login.php */
