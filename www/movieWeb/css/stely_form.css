@@ -19,7 +19,7 @@ li {
     right: 10%;
     width: 6rem;
     height: 30%;
-    border: 1px salmon solid;
+    /* border: 1px salmon solid; */
 }
 .bgImg_scroll_t {
     content: "";
@@ -96,7 +96,7 @@ li {
     top: 5%;
     left: 30%;
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 	background-size: contain;
 }
 .bg_macbook>img {
@@ -122,62 +122,130 @@ li {
 }
 /* index_from>header() 영역 */
 .pop_header {
-    width: 100%;
-    height: 7rem;
-    padding: 2%;
-    margin-bottom: 2rem;
+    width: 22.5%;
+    height: auto;
+    padding: 0.5% 2%;
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    opacity: 90%;
 }
-/* >header(/header_form.php) 영역 */
+
 .pop_header_wrap {
     width: 98%;
     height: 98%;
-}
-.pop_header_wrap>div {
-    width: 100%;
-    height: auto;
     clear: both;
 }
-.pop_header_home>a {
+.pop_header_title {
+    float: left;
+}
+.pop_header_title>h2 {
+    margin: 0;
+}
+.pop_header_home {
     float: right;
-    padding: 2%;
 }
 .pop_header_home>a>img {
+    margin-top: 12%;
     width: 2rem;
     height: 2rem;
 }
-.pop_header_logo>div {
-    margin-left: 45%;
-}
 
-.op_header_logo>div>img {
-    width: 5rem;    
-}
 /* index_from>section() 영역 */
 .pop_section {
     background-color: aqua;
-    width: 100%;
+    width: 96%;
+    margin-top: 12%;
     padding: 2%;
     content: "";
+}
+.pop_section_logo>div {
+    margin-left: 45%;
+}
+
+.pop_section_logo>div>img {   
+    width: 5rem;    
 }
 /* index_from>footer() 영역 */
+/* >footer(/footer_form.php) 영역 */
 .pop_footer {
-    background-color: #1E2C5C;
-    width: 100%;
+    background-color: gray;
+    width: 96%;
+    height: auto;
     padding: 2%;
     content: "";
 }
+.pop_footer>div {
+    padding: 2% 4%;
+    width: 94%;
+}
+.pop_footer_top {
+    display: flex;
+    flex-direction: row;
+}
+.pop_footer_top>p {
+    color: white;
+}
+.footerBtn {
+    content: "";
+    height: 3rem;
+    width: 3rem;
+    /* footerBtn_Ch 클릭시 변화 (회전)
+    transform: rotate( 0deg ) translate( 0% , 20% ); */
+    
+    transform: rotate( -180deg ) translate( -25% , 10% );
+}
 
-/* ------index>menu(nav)---------------------------- */
-/* index>nav>header(stely_menu.css 별도로 관리) 영역 */
-/* .menuSlide {
-    right: 0;
-    width: 90%;
-    height: auto;
+.footerBtn_Ch {
+    content: "";
+    position: relative;
+    width: 1.5rem;
+    height: 0.4rem;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    transform: rotate( -45deg ) translate( -13% , 170% );
+
+}
+.footerBtn_Ch::after {
+    content: "";
     position: absolute;
+    width: 1.5rem;
+    height: 0.4rem;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    transform: rotate( -90deg ) translate( -30% , 100% );
+}
+.pop_footer_center {
+    color: white;
     display: none;
-} */
-
-
+}
+.pop_footer_center>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0%;
+    color: white;
+}
+.pop_footer_center>ul>li>a {
+    color: white;
+}
+.pop_footer_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pop_footer_bottom>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 0%;
+    color: white;
+}
+.pop_footer_bottom>ul>li>a {
+    color: white;
+}
 
 
 
@@ -186,12 +254,17 @@ li {
         width: 38%;
         left: 28%;
     }
-
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 26%;
+    }
     /* >header(/header_form.php) 영역 */
     /* 로고영역 배열 비율 변경 */
     .popPage_top_logo>div {
         margin-left: 42%;
     }
+
 
 }
 @media all and (max-width:1580px) {
@@ -199,11 +272,22 @@ li {
         width: 40%;
         left: 26%;
     }
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 27.5%;
+    }
+
 }
 @media all and (max-width:1480px) {
     .bg_macbook {
         width: 44%;
         left: 24%;
+    }
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 30.5%;
     }
 }
 @media all and (max-width:1380px) {
@@ -211,11 +295,21 @@ li {
         width: 48%;
         left: 22%;
     }
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 33.5%;
+    }
 }
 @media all and (max-width:1280px) {
     .bg_macbook {
         width: 52%;
         left: 20%;
+    }
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 36.5%;
     }
 }
 @media all and (max-width:1180px) {
@@ -223,11 +317,21 @@ li {
         width: 54%;
         left: 18%;
     }
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 38%;
+    }
 }
 @media all and (max-width:1080px) {
     .bg_macbook {
         width: 58%;
         left: 14%;
+    }
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 41.5%;
     }
 }
 @media all and (max-width:980px) {
@@ -235,11 +339,21 @@ li {
         width: 60%;
         left: 10%;
     }
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 42.5%;
+    }
     
 }
 @media all and (max-width:900px) {
     .bg_macbook {
         width: 68%;
+    }
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 50%;
     }
     
 }
@@ -248,12 +362,22 @@ li {
         width: 76%;
         left: 6%;
     }
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 55%;
+    }
     
 }
 @media all and (max-width:780px) {
     .bg_macbook {
         width: 90%;
         left:   4%;
+    }
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 65%;
     }
     
 }
@@ -264,15 +388,31 @@ li {
     .bg_macbook {
         width: 100%;
         height: 100%;
-        top: 7%;
+        top: 0%;
         left: 0%;
     }
     .screen {
         top: 5%;
-        left: 0%;
-        width: 99%;
-        height: 90%;
+        left: 2%;
+        width: 96%;
+        height: 85%;
     }
-
+    /* index_from>header() 영역 */
+    /* 상단헤더바 폭 변경 */
+    .pop_header {
+        width: 95%;
+    }
+    /* index_from>section() 영역 */
+    .pop_section {
+        margin-top: 8%;
+    }
+    /* index_from>footer() 영역 */
+    /* >footer(/footer_form.php) 영역 */
+    .pop_footer_center>ul>li {
+        font-size: small;
+    }
+    .pop_footer_bottom>ul>li>a {
+        font-size: small;
+    }
 
 }

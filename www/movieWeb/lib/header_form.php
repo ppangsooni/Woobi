@@ -25,12 +25,6 @@
                 </a>
             </div>
             
-            <!-- 2. 로고영역 -->
-            <div class="pop_header_logo">
-                <div>
-                    <img src="https://i.ibb.co/swHGtC0/logo1.png" alt="BaAB">
-                </div>
-            </div>
 
         </div>
 
