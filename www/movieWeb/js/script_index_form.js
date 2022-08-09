@@ -1,8 +1,51 @@
+
+// window.onload : ºê¶ó¿ìÀú ·Îµå ¿Ï·á »óÅÂ¸¦ ³ªÅ¸³À´Ï´Ù
+// document.getElementById : Æ¯Á¤ °´Ã¼ ÅÂ±× ¾ÆÀÌµğ¸¦ ÁöÁ¤ÇÕ´Ï´Ù 
+// scrollTop : Æ¯Á¤ ÅÂ±× ½ºÅ©·Ñ À§Ä¡¸¦ ÁöÁ¤ÇÕ´Ï´Ù        
+
+
+
+/* [html ÃÖÃÊ ·Îµå ¹× ÀÌº¥Æ® »ó½Ã ´ë±â ½Ç½Ã] */
+window.onload = function() {
+    console.log("");
+    console.log("[window onload] : [start]");
+    console.log("");
+};
+
+
+
+/* [top ½ºÅ©·Ñ ÀÌº¥Æ® ÇÔ¼ö Á¤ÀÇ] */
+function top_scroll_move(){
+    console.log("");
+    console.log("[top_scroll_move] : [start]");
+    console.log("");
+
+    // ½ºÅ©·ÑÀ» ÀÌµ¿ÇÒ ·¹ÀÌ¾Æ¿ô ¾ÆÀÌµğ ÁöÁ¤
+    let screen = document.querySelector(".screen");
+
+    // [¸Ç »ó´ÜÀ¸·Î ½ºÅ©·Ñ ÀÌµ¿ ½Ç½Ã]
+    screen.scrollTop = 0;
+};
+
+
+
+/* [bottom ½ºÅ©·Ñ ÀÌº¥Æ® ÇÔ¼ö Á¤ÀÇ] */
+function bottom_scroll_move(){
+    console.log("");
+    console.log("[bottom_scroll_move] : [start]");
+    console.log("");
+
+    // ½ºÅ©·ÑÀ» ÀÌµ¿ÇÒ ·¹ÀÌ¾Æ¿ô ¾ÆÀÌµğ ÁöÁ¤
+    let screen = document.querySelector(".screen");
+
+    // [¸Ç ÇÏ´ÜÀ¸·Î ½ºÅ©·Ñ ÀÌµ¿ ½Ç½Ã]
+    screen.scrollTop = screen.scrollHeight;
+};
 //--------------------footer------------------------------
-// footerì˜ì—­ ë²„íŠ¼
+// footer¿µ¿ª ¹öÆ°
 let footerBtn = document.querySelector('.footerBtn'),
     footerBtn_Ch = document.querySelector('.footerBtn_Ch'),
-    footerSlide = document.querySelector('.pop_footer_center');
+    footerSlide = document.querySelector('.footer_center');
 
     footerBtn.addEventListener('click', function() {   
     if (footerSlide.style.display == 'none') {

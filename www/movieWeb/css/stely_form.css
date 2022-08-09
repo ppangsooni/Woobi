@@ -13,41 +13,76 @@ a {
 li {
     list-style: none;
 }
+/* ------index>background_scroll(bgScroll.php)----------------------- */
 .bgImg{
     position: fixed;
     top: 40%;
-    right: 10%;
+    right: 12%;
     width: 6rem;
     height: 30%;
-    /* border: 1px salmon solid; */
 }
-.bgImg_scroll_t {
+.bgImg_scroll {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bgImg_scroll_topBtn {
+    width: 100%;
+    height: 25%;
+}
+.bgImg_scroll_topBtn>span {
+    display: block;
+    margin: 0% 34%;
+    margin-top: 8%;
+    margin-bottom: -8%;
+    font-size: larger;
+    color: rgb(114, 114, 114);
+}
+.bgImg_scroll_topBtn:hover {
+    animation: scrollTop 0.5s ease-in-out infinite;
+}
+
+@keyframes scrollTop {
+    from {
+        transform: translateY(0px); 
+    }
+    to {
+        transform: translateY(-15px); 
+    }
+}
+.bgImg_scroll_t {   
     content: "";
     position: relative;
-    top: 2rem;
+    top: 10%;
     width: 2rem;
     height: 5%;
+    background-color:rgb(114, 114, 114);
     border: 4px rgb(114, 114, 114) solid; 
-    border-radius: 30%;
-    transform: rotate( -46deg ) translate( -5% , 135% );
+    border-radius: 30px;
+    transform: rotate( -45deg ) translate( 5% , 190% );
 }
 .bgImg_scroll_t::after {
     content: "";
     position: absolute;
-    top: -10%;
     width: 100%;
     height: 100%;
+    background-color:rgb(114, 114, 114);
     border: 4px rgb(114, 114, 114) solid; 
-    border-radius: 30%;
-    transform: rotate( 95deg ) translate( 30% , -185% );
+    border-radius: 30px;
+    transform: rotate( 90deg ) translate( 25% , -90% );
+}
+.bgImg_scroll_mouse {
+    width: 100%;
+    height: 50%;
 }
 .bgImg_scroll_m{
     content: "";
     position: relative;
-    top: 4.8rem;
-    left: 0.5rem;
-    width: 3rem;
-    height: 4.5rem;
+    top: 15%;
+    left: 14%;
+    width: 3.5rem;
+    height: 5rem;
     border: 6px rgb(114, 114, 114) solid; 
     border-radius: 45%;  
 }
@@ -57,31 +92,76 @@ li {
     top: 20%;
     left: 42%;
     width: 5%;
-    height: 20%;
-    background-color: rgb(114, 114, 114);
+    height: 8%;
     border: 4px rgb(114, 114, 114) solid; 
-    border-radius: 40%;  
+    border-radius: 30px;  
+    /* animation: name() duration(총 시간:2.5x) timing-function(진행속도) iteration-count(무한반복)   */
+    animation: scrollWheel 2.5s linear infinite;
 }
+@keyframes scrollWheel {
+    0% {
+        opacity: 1;
+        top: 20%;
+      }
+      15% {
+        opacity: 1;
+        top: 50%;
+      }
+      50% {
+        opacity: 0;
+        top: 50%;
+      }
+      100% {
+        opacity: 0;
+        top: 20%;
+      }
+}
+.bgImg_scroll_bottomBtn {
+    width: 100%;
+    height: 25%;
+    transform: rotate( 180deg );
+}	
+.bgImg_scroll_bottomBtn:hover {
+    animation: scrollBottom 0.5s ease-in-out infinite;
+}
+@keyframes scrollBottom {
+    from {
+        transform: rotate( 180deg )  translateY(15px); 
+    }
+    to {
+        transform: rotate( 180deg )  translateY(0px); 
+    }
+}
+.bgImg_scroll_bottomBtn>span {
+    display: block;
+    margin: 2% 20%;
+    margin-top: -5%;
+    font-size: larger;
+    color: rgb(114, 114, 114);
+    transform: rotate( 180deg );
+}	
+
 .bgImg_scroll_b {
     content: "";
     position: relative;
-    top: 6rem;
-
+    top: 40%;
+    left: 2%;
     width: 2rem;
     height: 5%;
+    background-color:rgb(114, 114, 114);
     border: 4px rgb(114, 114, 114) solid; 
-    border-radius: 30%;
-    transform: rotate( 44deg ) translate( 52% , 132% );
+    border-radius: 30px;
+    transform: rotate( -45deg ) translate( 5% , 190% );  
 }
 .bgImg_scroll_b::after {
     content: "";
     position: absolute;
-    top: -10%;
     width: 100%;
     height: 100%;
+    background-color:rgb(114, 114, 114);
     border: 4px rgb(114, 114, 114) solid; 
-    border-radius: 30%;
-    transform: rotate( -90deg ) translate( 50% , 150% );
+    border-radius: 30px;
+    transform: rotate( 90deg ) translate( 25% , -90% );
 }
 .bg {
     width: 100%;
@@ -138,15 +218,17 @@ li {
 }
 .pop_header_title {
     float: left;
+    margin-top: 1%;
 }
 .pop_header_title>h2 {
     margin: 0;
 }
 .pop_header_home {
+    margin-top: 1%;
     float: right;
 }
 .pop_header_home>a>img {
-    margin-top: 12%;
+    margin-top: 1%;
     width: 2rem;
     height: 2rem;
 }
@@ -160,6 +242,7 @@ li {
     content: "";
 }
 .pop_section_logo>div {
+    margin: 8% 0%;
     margin-left: 45%;
 }
 
@@ -167,23 +250,23 @@ li {
     width: 5rem;    
 }
 /* index_from>footer() 영역 */
-/* >footer(/footer_form.php) 영역 */
-.pop_footer {
+/* >footer(/footer.php) 영역 */
+.footer {
     background-color: gray;
     width: 96%;
     height: auto;
     padding: 2%;
     content: "";
 }
-.pop_footer>div {
+.footer>div {
     padding: 2% 4%;
     width: 94%;
 }
-.pop_footer_top {
+.footer_top {
     display: flex;
     flex-direction: row;
 }
-.pop_footer_top>p {
+.footer_top>p {
     color: white;
 }
 .footerBtn {
@@ -217,33 +300,35 @@ li {
     border-radius: 25px;
     transform: rotate( -90deg ) translate( -30% , 100% );
 }
-.pop_footer_center {
+.footer_center {
     color: white;
     display: none;
 }
-.pop_footer_center>ul {
+.footer_center>ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-inline-start: 0%;
     color: white;
+    list-style: none;
 }
-.pop_footer_center>ul>li>a {
+.footer_center>ul>li>a {
     color: white;
 }
-.pop_footer_bottom {
+.footer_bottom {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.pop_footer_bottom>ul {
+.footer_bottom>ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-inline-start: 0%;
     color: white;
+    list-style: none;
 }
-.pop_footer_bottom>ul>li>a {
+.footer_bottom>ul>li>a {
     color: white;
 }
 
@@ -388,7 +473,7 @@ li {
     .bg_macbook {
         width: 100%;
         height: 100%;
-        top: 0%;
+        top: 7%;
         left: 0%;
     }
     .screen {
@@ -404,14 +489,14 @@ li {
     }
     /* index_from>section() 영역 */
     .pop_section {
-        margin-top: 8%;
+        margin-top: 10%;
     }
     /* index_from>footer() 영역 */
-    /* >footer(/footer_form.php) 영역 */
-    .pop_footer_center>ul>li {
+    /* >footer(/footer.php) 영역 */
+    .footer_center>ul>li {
         font-size: small;
     }
-    .pop_footer_bottom>ul>li>a {
+    .footer_bottom>ul>li>a {
         font-size: small;
     }
 

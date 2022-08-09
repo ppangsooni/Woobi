@@ -1,13 +1,13 @@
-<div class="pop_footer_wrap">
+<div class="footer_wrap">
     <div>
-        <div class="pop_footer_top">
+        <div class="footer_top">
             <p>BaAB (주)</p>
             <div class="footerBtn">
                 <div class="footerBtn_Ch"></div>
             </div>
 
         </div>
-        <div class="pop_footer_center">
+        <div class="footer_center">
             <ul>
                 <li>대표이사 : 김다홍</li>
                 <li>부산광역시 해운대구 우2동 해운대로 407 신세계프라자 10층</li>
@@ -15,7 +15,7 @@
                 <li>대표이메일 : baabmaster@baab.net &VerticalSeparator; 고객센터 : 1544 - 1234</li>
             </ul>
         </div>
-        <div class="pop_footer_bottom">
+        <div class="footer_bottom">
             <ul>
                 <li><a> 이용약관</a></li>
                 <span> &VerticalSeparator;</span>
