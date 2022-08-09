@@ -23,10 +23,10 @@
                     <header class="pop_header">
                         <div class="pop_header_wrap">
                             <div class="pop_header_title">
-                                <h2>popup form:title Name</h2>
+                                <h2>:title Name</h2>
                             </div>
-                            <?php include "../lib/header_form.php" ?>
-                            <!-- php include "../movieWeb/lib/header_form.php" -->
+                            <?php include "../movieWeb/lib/header_form.php" ?>
+                            <!-- php include "../lib/header_form.php" -->
                         </div>
                     </header>
                     <section class="pop_section">

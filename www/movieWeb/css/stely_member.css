@@ -1,0 +1,17 @@
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.idckIcon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.submitIcon,.resetIcon  {
+    width: 2rem;
+    height: 2rem;
+}   
