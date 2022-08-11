@@ -1,0 +1,57 @@
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: rebeccapurple solid 1px;
+}
+.col1 {
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.col2 {
+    width: 100%;
+    background-color: orange;
+}
+.col1_Id {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: aquamarine;
+}
+.checkIdBt {
+    text-align: center;
+    /* background-color: red; */
+    border: transparent 1px solid;
+    border-radius: 5px;
+    margin: 0% 3%;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+}
+.checkIdBt>span {
+    display: block;
+    
+}
+.idckIcon_ok {
+    /* background-color: green; */
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+.idckIcon_no {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
+.submitIcon,.resetIcon  {
+    width: 2rem;
+    height: 2rem;
+}   

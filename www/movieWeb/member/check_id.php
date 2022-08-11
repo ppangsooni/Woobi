@@ -1,12 +1,22 @@
 <meta charset="EUC-KR">
- 
+
 <?php
- 
+    include "../lib/dbconn.php";
     $userId= $_GET['userId'];
  
     // 값을 전달하지 않을 수도 있으니
     if(!$userId){
-        echo "아이디를 입력하세요.";
+        echo "<div style=' font-size: 1.2em; text-align:center; font-family:sans-serif; color: brown; font-weight: bolder;'>
+        아이디를 입력하세요.<br><br>";
+        echo "
+        <button type='button' onclick='popupClose()'
+         style='background-color: brown; color: wheat; font-size: 1.2em;  border:1px solid wheat; border-radius: 8px;'>
+         닫기</button></div>
+         <script>
+        function popupClose() {
+         // window.opener.location.reload(); 부모창의 정보는 그대로두기
+            window.close();
+        }</script>";
         exit;
     }
  
@@ -20,10 +30,27 @@
  
     // $rowNum이 0이 아니면 중복
     if($rowNum){
-        echo "아이디가 중복 됩니다.<br>";
-        echo "다른 아이디를 사용하세요.<br>";
+        echo "<div style=' font-size: 1.2em; text-align:center; font-family:sans-serif; color: brown; font-weight: bolder;'> 
+                아이디가 중복 됩니다.<br>다른 아이디를 사용하세요.<br><br>";
+        echo "
+        <button type='button' onclick='popupClose()'
+         style='background-color: brown; color: wheat; font-size: 1.2em;  border:1px solid wheat; border-radius: 8px;'>
+         닫기</button><script>
+        function popupClose() {
+         // window.opener.location.reload(); 부모창의 정보는 그대로두기
+            window.close();
+        }</script>";
     }else{
-        echo "사용가능한 아이디 입니다.<br>";
+        echo "<div style=' font-size: 1.2em; text-align:center; font-family:sans-serif; color: #1E2C5C; font-weight: bolder;'> 
+                사용가능한 아이디 입니다.<br><br>";
+        echo "
+        <button type='button' onclick='popupClose()'
+         style='background-color: #1E2C5C; color: wheat; font-size: 1.2em;  border:1px solid wheat; border-radius: 8px;'>
+         닫기</button><script>
+        function popupClose() {
+         // window.opener.location.reload(); 부모창의 정보는 그대로두기
+            window.close();
+        }</script>";
     }
  
     mysqli_close($conn);

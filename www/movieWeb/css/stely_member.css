@@ -1,17 +1,107 @@
 
-.form {
+/* .form {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 3% 2%;
+} */
+
+/* formºÎºÐ */
+.form_id {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 2%;
+}
+.form_id>div {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+.form_id>div:nth-child(1){
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+/* .col1 {
+    font-size: larger;
+    letter-spacing: 0.1rem;
+    padding: 1% 1%;
+    width: 35%;
+}
 
-.idckIcon {
+.col2 {
+    font-size: larger;
+    padding: 1% 1%;
+    width: 55%;
+} */
+.col2>input {
+    width: 90%;
+    height: 1.5rem;
+    border: transparent;
+}
+.col3 {
+    margin-top: 0;
+}
+.checkIdBt {
+    text-align: center;
+    color: brown;
+    border: brown 2px double;
+    border-radius: 5px;
+    width: 50%;
+    margin: 2%;
+    padding: 1%;
+}
+.checkIdBt>span {
+    display: block;
+    
+}
+
+.submitIcon,.resetIcon  {   
+    width: 3rem;
+    height: 3rem;
+}   
+.imgBtns>div {
+    border: 1px transparent solid;
+    border-radius: 5px;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgBtns>div:nth-child(1) {
+    width: 40%;
+    background-color: #1E2C5C;
+}
+.imgBtns>div:nth-child(2) {
+    width: 30%;
+    background-color: gray;
+}
+.imgBtns>div>span {
+    display: block;
+    color: white;
+    font-size: larger;
+    letter-spacing: 0.2em;
+}
+
+.formBtnTypeCh1>img {
     width: 2rem;
     height: 2rem;
 }
-
-.submitIcon,.resetIcon  {
-    width: 2rem;
-    height: 2rem;
-}   
+.formBtnType {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 3% 10%;
+}

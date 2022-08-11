@@ -19,7 +19,8 @@ li {
     top: 40%;
     right: 12%;
     width: 6rem;
-    height: 30%;
+    height: 25%;
+    
 }
 .bgImg_scroll {
     width: 100%;
@@ -70,7 +71,7 @@ li {
     background-color:rgb(114, 114, 114);
     border: 4px rgb(114, 114, 114) solid; 
     border-radius: 30px;
-    transform: rotate( 90deg ) translate( 25% , -90% );
+    transform: rotate( 90deg ) translate( 25% , -80% );
 }
 .bgImg_scroll_mouse {
     width: 100%;
@@ -79,7 +80,7 @@ li {
 .bgImg_scroll_m{
     content: "";
     position: relative;
-    top: 15%;
+    top: 20%;
     left: 14%;
     width: 3.5rem;
     height: 5rem;
@@ -161,8 +162,9 @@ li {
     background-color:rgb(114, 114, 114);
     border: 4px rgb(114, 114, 114) solid; 
     border-radius: 30px;
-    transform: rotate( 90deg ) translate( 25% , -90% );
+    transform: rotate( 90deg ) translate( 25% , -80% );
 }
+
 .bg {
     width: 100%;
     height: 100%;
@@ -217,14 +219,15 @@ li {
     clear: both;
 }
 .pop_header_title {
+    margin-top: 2%;
     float: left;
-    margin-top: 1%;
 }
 .pop_header_title>h2 {
     margin: 0;
+
 }
 .pop_header_home {
-    margin-top: 1%;
+    margin-top: 2%;
     float: right;
 }
 .pop_header_home>a>img {
@@ -255,7 +258,7 @@ li {
     padding: 4%;
 }
 .pop_section_main>article {
-    border: 1px solid blue;
+    border: 1px solid #1E2C5C;
     width: 92%;
     padding: 2% 4% 4% 4%;
     text-align: center;
@@ -264,9 +267,60 @@ li {
     font-size: x-large;
 }
 .pop_section_main>article>div {
-    border: 1px solid blue;
+    border: 1px solid #1E2C5C;
     width: 92%;
     padding: 4%;   
+}
+/* form부분 */
+.form {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    margin: 3% 2%;
+}
+.col1 {
+    font-size: larger;
+    letter-spacing: 0.1rem;
+    /* background-color: aquamarine; */
+    padding: 1% 1%;
+    width: 35%;
+}
+
+.col2 {
+    font-size: larger;
+    /* background-color: orange; */
+    padding: 1% 1%;
+    width: 55%;
+}
+.col2>input {
+    width: 90%;
+    height: 1.5rem;
+    border: transparent;
+}
+.bottom_line {
+    width: 96%;
+    margin: 10% 2% 15% 2%;
+}
+.textBtns {
+    width: 100%;
+    padding: 3% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgBtns {
+    width: 100%;
+    padding: 3% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 /* index_from>footer() 영역 */
 /* >footer(/footer.php) 영역 */
