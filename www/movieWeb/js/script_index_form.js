@@ -41,6 +41,11 @@ function bottom_scroll_move(){
     // [맨 하단으로 스크롤 이동 실시]
     screen.scrollTop = screen.scrollHeight;
 };
+//--------------------header------------------------------
+    function back() {
+        window.history.go(-1);
+    }
+
 //--------------------footer------------------------------
 // footer영역 버튼
 let footerBtn = document.querySelector('.footerBtn'),

@@ -10,13 +10,24 @@
 } */
 
 /* formºÎºÐ */
+
+.pop_section_main {
+}
+form {
+    width: 100%;
+    
+}
+.form {
+    box-shadow: 5px 5px 10px -5px rgb(114, 114, 114);
+}
 .form_id {
     width: 96%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3% 2%;
+    margin: 5% 2%;
+    
 }
 .form_id>div {
     width: 100%;
@@ -27,21 +38,31 @@
 }
 .form_id>div:nth-child(1){
     background-color: white;
+    box-shadow: 5px 5px 10px -5px rgb(114, 114, 114);
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 /* .col1 {
-    font-size: larger;
     letter-spacing: 0.1rem;
     padding: 1% 1%;
     width: 35%;
 }
 
 .col2 {
-    font-size: larger;
     padding: 1% 1%;
     width: 55%;
 } */
+.col1 {
+    font-size: x-large;
+}
+.col2 {
+    font-size: x-large;
+}
+.form:nth-child(3)>.col1 {
+    font-size: larger;
+    letter-spacing: 0em;
+}
+
 .col2>input {
     width: 90%;
     height: 1.5rem;
@@ -56,8 +77,9 @@
     border: brown 2px double;
     border-radius: 5px;
     width: 50%;
-    margin: 2%;
+    margin: 3%;
     padding: 1%;
+        cursor : pointer;
 }
 .checkIdBt>span {
     display: block;
@@ -65,26 +87,36 @@
 }
 
 .submitIcon,.resetIcon  {   
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
 }   
 .imgBtns>div {
+    width: 40%;
+    height: 3rem;
     border: 1px transparent solid;
+    background-color: gray;
     border-radius: 5px;
     padding: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    cursor : pointer;
 }
-.imgBtns>div:nth-child(1) {
-    width: 40%;
-    background-color: #1E2C5C;
+
+.imgBtns>div:nth-child(1):hover,
+.imgBtns>div:nth-child(1):focus {
+  box-shadow: inset 0 0 0 3em #1E2C5C;
 }
-.imgBtns>div:nth-child(2) {
-    width: 30%;
-    background-color: gray;
+
+.imgBtns>div:nth-child(2):hover, 
+.imgBtns>div:nth-child(2):focus {
+  animation: reset 1s;
+  box-shadow: 0 0 0 2em transparent;
 }
+@keyframes reset {
+    0% { box-shadow: 0 0 0 0 gray; }
+  }
 .imgBtns>div>span {
     display: block;
     color: white;
@@ -92,16 +124,61 @@
     letter-spacing: 0.2em;
 }
 
-.formBtnTypeCh1>img {
-    width: 2rem;
-    height: 2rem;
+.pop_section_main>article>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .formBtnType {
-    width: 60%;
+    width: 96%;
+    height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin: 3% 10%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 3% 2%;
+    cursor : pointer;
+}
+.formBtnTypeCh1{
+    width: 35%;
+}
+.formBtnTypeCh1>img {
+    width: 2rem;
+    height: 2rem;
+    /* margin-top: 10%; */
+}
+.formBtnTypeCh2{
+    width: 55%;
+}
+.formBtnTypeCh2 {
+    font-size: larger;
+}
+.imgBtns>div>span {
+    font-size: larger;
+    letter-spacing: 0.1em;
+}
+@media all and (max-width:1680px) {
+    .col1 {
+        font-size: large;
+    }
+    .col2 {
+        font-size: large;
+    }
+    .form:nth-child(3)>.col1 {
+        font-size: medium;
+    }
+    .imgBtns>div>span {
+        font-size: medium;
+        letter-spacing: 0.1em;
+    }
+    .formBtnTypeCh2 {
+        font-size: medium;
+    }
+}
+@media all and (max-width:680px) {
+
 }

@@ -15,7 +15,7 @@
     if( isset($_SESSION['userPoint'])) $userpoint= $_SESSION['userPoint'];
  
 ?>
-<!-- 헤더 영역의 로고와 회원가입/로그인 표시 영역 -->
+
             <!-- 헤더 영역의 네비게이션 메뉴 영역 -->
             <div class="pop_header_home">
                 <a href="../index.php">

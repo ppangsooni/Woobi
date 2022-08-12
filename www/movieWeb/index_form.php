@@ -23,6 +23,9 @@
                     <header class="pop_header">
                         <div class="pop_header_wrap">
                             <div class="pop_header_title">
+                                <a class="pop_header_back" href="back();">
+                                    <img src="https://i.ibb.co/dB2ztsX/back.png" alt="back">
+                                </a>
                                 <h2>:title Name</h2>
                             </div>
                             <?php include "../movieWeb/lib/header_form.php" ?>

@@ -19,7 +19,7 @@ li {
     top: 40%;
     right: 12%;
     width: 6rem;
-    height: 25%;
+    height: 30%;
     
 }
 .bgImg_scroll {
@@ -71,7 +71,7 @@ li {
     background-color:rgb(114, 114, 114);
     border: 4px rgb(114, 114, 114) solid; 
     border-radius: 30px;
-    transform: rotate( 90deg ) translate( 25% , -80% );
+    transform: rotate( 90deg ) translate( 30% , -102% );
 }
 .bgImg_scroll_mouse {
     width: 100%;
@@ -80,7 +80,7 @@ li {
 .bgImg_scroll_m{
     content: "";
     position: relative;
-    top: 20%;
+    top: 15%;
     left: 14%;
     width: 3.5rem;
     height: 5rem;
@@ -189,9 +189,8 @@ li {
     position: absolute;
     top: 8.5%;
     left:  9.5%;
-    width: 80.5%;
-    height: 81%;
-    border: 1px saddlebrown solid;
+    width: 80.8%;
+    height: 81.5%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -219,11 +218,24 @@ li {
     clear: both;
 }
 .pop_header_title {
+    width: 60%;
     margin-top: 2%;
     float: left;
 }
+.pop_header_back {
+    float: left;
+    margin-top: 1%;
+}
+.pop_header_back>img{
+    margin-top: 18%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
 .pop_header_title>h2 {
-    margin: 0;
+    margin-top: 2%;
+    float: left;
+    padding-left: 10%;
+
 
 }
 .pop_header_home {
@@ -253,12 +265,10 @@ li {
     width: 5rem;    
 }
 .pop_section_main {
-    background-color: blanchedalmond;
     width: 92%;
     padding: 4%;
 }
 .pop_section_main>article {
-    border: 1px solid #1E2C5C;
     width: 92%;
     padding: 2% 4% 4% 4%;
     text-align: center;
@@ -267,9 +277,9 @@ li {
     font-size: x-large;
 }
 .pop_section_main>article>div {
-    border: 1px solid #1E2C5C;
     width: 92%;
     padding: 4%;   
+    text-align: center;
 }
 /* form부분 */
 .form {
@@ -280,11 +290,10 @@ li {
     align-items: center;
     background-color: white;
     border: 1px solid transparent;
-    border-radius: 1px;
-    margin: 3% 2%;
+    border-radius: 10px;
+    margin: 5% 2%;
 }
 .col1 {
-    font-size: larger;
     letter-spacing: 0.1rem;
     /* background-color: aquamarine; */
     padding: 1% 1%;
@@ -292,7 +301,6 @@ li {
 }
 
 .col2 {
-    font-size: larger;
     /* background-color: orange; */
     padding: 1% 1%;
     width: 55%;
@@ -307,7 +315,8 @@ li {
     margin: 10% 2% 15% 2%;
 }
 .textBtns {
-    width: 100%;
+    margin: 2% 3%;
+    width: 94%;
     padding: 3% 2%;
     display: flex;
     flex-direction: column;
@@ -350,6 +359,7 @@ li {
     transform: rotate( 0deg ) translate( 0% , 20% ); */
     
     transform: rotate( -180deg ) translate( -25% , 10% );
+    cursor : pointer;
 }
 
 .footerBtn_Ch {
@@ -558,9 +568,12 @@ li {
     /* index_from>header() 영역 */
     /* 상단헤더바 폭 변경 */
     .pop_header {
-        width: 95%;
+        width: 92%;
     }
     /* index_from>section() 영역 */
+    .pop_section_logo>div {
+        margin-left: 42%;
+    }
     .pop_section {
         margin-top: 10%;
     }

@@ -1,0 +1,72 @@
+.form {
+    box-shadow: 5px 5px 10px -5px rgb(114, 114, 114);
+}
+.col1 {
+    font-size: x-large;
+}
+.col2 {
+    font-size: x-large;
+}
+.textBtns{
+    background-color:  #1E2C5C;
+    border: 1px solid transparent;
+    border-radius: 15px;
+
+}
+.loginBtn {
+    width: 100%;
+    height: 100%;
+    font-size: larger;
+    color: white;
+    background-color:  #1E2C5C;
+    border: transparent;
+}
+.formBtnType {
+    width: 96%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 3% 2%;
+    cursor : pointer;
+}
+.formBtnTypeCh1{
+    width: 35%;
+}
+.formBtnTypeCh1>img {
+    width: 2rem;
+    height: 2rem;
+    /* margin-top: 10%; */
+}
+.formBtnTypeCh2{
+    width: 55%;
+}
+.formBtnTypeCh2 {
+    font-size: larger;
+}
+.imgBtns>div>span {
+    font-size: larger;
+    letter-spacing: 0.1em;
+}
+@media all and (max-width:1680px) {
+    .col1 {
+        font-size: large;
+    }
+    .col2 {
+        font-size: large;
+    }
+    .textBtns>div>span {
+        font-size: medium;
+        letter-spacing: 0.1em;
+    }
+    .formBtnTypeCh2 {
+        font-size: medium;
+    }
+}
+@media all and (max-width:680px) {
+
+}

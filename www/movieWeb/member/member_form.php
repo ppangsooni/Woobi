@@ -9,10 +9,12 @@
     <meta charset="EUC-KR">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BaAB의 가족이 되어보세요">
     <link rel="stylesheet" type="text/css" href="../css/stely_form.css">
     <link rel="stylesheet" type="text/css" href="../css/stely_member.css">
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/swHGtC0/logo1.png">
     <title>회원가입</title>
+    
 </head>
 <div class="bg">
         <!---------------background_scroll(bgScroll.php------------------------------------------------>
@@ -23,7 +25,10 @@
                 <div class="wrap">
                 <header class="pop_header">
                     <div class="pop_header_wrap">
-                        <div class="pop_header_title">
+                    <div class="pop_header_title">
+                            <a class="pop_header_back" href="back();">
+                                <img src="https://i.ibb.co/dB2ztsX/back.png" alt="back">
+                            </a>
                             <h2>회원가입</h2>
                         </div>
                         <?php include "../lib/header_form.php" ?>
@@ -105,15 +110,25 @@
                                             </div>
                                             
                                         </form>
-                                    </div>
+                                    </div>  
                                 </article>
                         
                                 <!-- 2. main_bottom -->
                                 <article class="pop_section_main_bottom">
-                                    <h4>main_bottom</h4>
-                                    <div class="formBtnType">
-                                        <div class="formBtnTypeCh1"><img src="https://i.ibb.co/8mXHcsp/naver.png"></div>
-                                        <div class="formBtnTypeCh2">휴대폰 간편로그인</div>
+                                    <!-- <h4>main_bottom</h4> -->
+                                    <div>
+                                        <div class="formBtnType">
+                                            <div class="formBtnTypeCh1"><img src="https://i.ibb.co/3mcScVf/image.png" alt="naverIcon"></div>
+                                            <div class="formBtnTypeCh2">네이버 간편로그인</div>
+                                        </div>
+                                        <div class="formBtnType">
+                                            <div class="formBtnTypeCh1"><img src="https://i.ibb.co/BL1RghR/image.png" alt="kakaoIcon"></div>
+                                            <div class="formBtnTypeCh2">카카오 간편로그인</div>
+                                        </div>
+                                        <div class="formBtnType">
+                                            <div class="formBtnTypeCh1"><img src="https://i.ibb.co/9Ydn27t/apple.png" alt="appleIcom"></div>
+                                            <div class="formBtnTypeCh2"> 간편로그인</div>
+                                        </div>
                                     </div>
                                 </article>
                             </div>                                      

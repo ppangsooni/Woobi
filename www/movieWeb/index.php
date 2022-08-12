@@ -9,6 +9,7 @@
     <meta charset="EUC-KR">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BaAB를 통해 다양한 영화를 만나보세요">
     <link rel="stylesheet" type="text/css" href="./css/stely_index.css">
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/swHGtC0/logo1.png">
     <title>BAAB::CINEMA</title>

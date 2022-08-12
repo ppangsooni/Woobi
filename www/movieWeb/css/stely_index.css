@@ -79,7 +79,7 @@ li {
 .bgImg_scroll_m{
     content: "";
     position: relative;
-    top: 20%;
+    top: 15%;
     left: 14%;
     width: 3.5rem;
     height: 5rem;
@@ -161,8 +161,9 @@ li {
     background-color:rgb(114, 114, 114);
     border: 4px rgb(114, 114, 114) solid; 
     border-radius: 30px;
-    transform: rotate( 90deg ) translate( 25% , -80% );
+    transform: rotate( 90deg ) translate( 30% , -102% );
 }
+
 .bg {
     width: 100%;
     height: 100%;
@@ -187,9 +188,9 @@ li {
     position: absolute;
     top: 8.5%;
     left:  9.5%;
-    width: 80.5%;
-    height: 81%;
-    border: 1px saddlebrown solid;
+    width: 80.8%;
+    height: 81.5%;
+    /* border: 1px saddlebrown solid; */
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -200,6 +201,7 @@ li {
     display: flex;
     flex-direction: column;
 }
+/* ------index>header()---------------------------- */
 /* index>header() ¿µ¿ª */
 .header {
     width: 100%;
@@ -260,7 +262,6 @@ li {
     list-style: none;
     margin-top: 1%;
     padding:0% 2%;
-
 }
 .header_submenu_list>li>a {
     color: white;
@@ -348,6 +349,7 @@ li {
     background-color: white;
     border: 1px solid transparent;
     border-radius: 50%;
+    color: brown;
 }
 .menuPage_login {
     width: 60%;
@@ -564,6 +566,7 @@ li {
     transform: rotate( 0deg ) translate( 0% , 20% ); */
     
     transform: rotate( -180deg ) translate( -25% , 10% );
+    cursor : pointer;
 }
 
 .footerBtn_Ch {

@@ -10,7 +10,7 @@
  
     if( isset($_SESSION['userId'])) $userid= $_SESSION['userId'];
     if( isset($_SESSION['userName'])) $username= $_SESSION['userName'];
-    if( isset($_SESSION['grane'])) $userlevel= $_SESSION['grane'];
+    if( isset($_SESSION['grane'])) $grane= $_SESSION['grane'];
     if( isset($_SESSION['userPoint'])) $userpoint= $_SESSION['userPoint'];
  
 ?>
@@ -38,8 +38,14 @@
                 <?php }else{ ?>
                     <div>
                         <?php
-                         echo "<p class='userKeyup'> $userId ´Ô    <span>$grane</span></p>";
-                         echo "<p> Æ÷ÀÎÆ® $userPoint </p>";
+                        echo '<li><a href="./login/logout.php">·Î±×¾Æ¿ô</a></li>'
+                        //     $userId = $_SESSION['userId'];
+                        //     $userName = $_SESSION['userName'];
+                        //     $grane = $_SESSION['grane'];
+                        //     $userPoint = $_SESSION['userPoint'];
+                        // echo "Hi, $userId($userName) $grane $userPoint";
+                        //  echo "<p class='userKeyup'> $userId ´Ô    <span>$grane</span></p>";
+                        //  echo "<p> Æ÷ÀÎÆ® $userPoint </p>";
                         ?>
                     </div>
                     <li><a href="./login/logout.php">·Î±×¾Æ¿ô</a></li>
