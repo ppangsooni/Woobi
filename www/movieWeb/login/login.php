@@ -33,7 +33,7 @@
     include "../lib/dbconn.php";
  
     // 쿼리문
-    $sql= "SELECT * FROM movie.member WHERE userId='$userId' and userPassword='$userPassword'";
+    $sql= "SELECT * FROM member WHERE userId='$userId' and userPassword='$userPassword'";
     $result= mysqli_query($conn,$sql);
     // 결과표로부터 레코드 수 얻어오기
     $rowNum= mysqli_num_rows($result);
@@ -53,15 +53,17 @@
     // 다른 페이지에서 로그인 되었다고 인지하기 위해, 회원정보를 세션에 저장
     // 해당하는 id의 회원정보 얻어오기
     $row=mysqli_fetch_array($result, MYSQLI_ASSOC);
+    // $row = mysqli_fetch_assoc($result);
  
     // 세션에 저장
     session_start();
     $_SESSION['userId']=$row['userId'];
-    $_SESSION['userPassword']=$row['userPassword'];
+    $_SESSION['userName']=$row['userName'];
     $_SESSION['grane']=$row['grane'];
-    $_SESSION['userpoint']=$row['userpoint'];
+    $_SESSION['userPoint']=$row['userPoint'];
  
     // 세션저장이 되었으니 index.php페이지로 이동
+    
     echo "
         <script>
             alert('로그인에 성공하셨습니다!');
