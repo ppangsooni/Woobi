@@ -130,7 +130,7 @@ a {
 /* 로그인 메인영역(loginWrap)에 키업시 loginWrapBg의 opacity 변경 */
 .loginWrapBg {
     content: "";
-    top: 28%;
+    top: -100%;
     left: 42%;
     width: 17.5rem;
     height: 26rem;
@@ -143,7 +143,7 @@ a {
 }
 
 .loginWrap {
-    top: 28%;
+    top: -100%;
     left: 42%;
     width: 17.5rem;
     height: 26rem;
@@ -259,6 +259,11 @@ a {
     text-align: end;
     padding: 10%;
 }
+
+.lsw {
+    cursor: pointer;
+}
+
 .login_subWrap_1:hover {
     width: 8rem;
     transition-duration: 2s;

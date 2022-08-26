@@ -802,26 +802,26 @@ header {
      width: 8rem; */
 }
 
-.hesder_right {
+.header_right {
     width: 60%;
     float: right;
     margin: 1% 0%;
 }
 
-.hesder_menulist {
+.header_menulist {
     display: flex;
     flex-direction: row;
     justify-content: end;
     margin: 0%;
 }
 
-.hesder_menulist>li>div {
+.header_menulist>li>div {
     width: 4rem;
     text-align: center;
     margin: 0% 5%;
 }
 
-.hesder_menulist_text {
+.header_menulist_text {
     font-family: 'yg-jalnan';
     margin: 0%;
     font-size: 0.8em;
@@ -829,11 +829,11 @@ header {
     display: none;
 }
 
-.hesder_menulist>li>div:hover .hesder_menulist_text {
+.header_menulist>li>div:hover .header_menulist_text {
     display: block;
 }
 
-.hesder_menulist>li>div>img {
+.header_menulist>li>div>img {
     width: 2rem;
     height: 2rem;
 }
