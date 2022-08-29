@@ -264,6 +264,7 @@ li {
 .pop_section_logo>div>img {   
     width: 5rem;    
 }
+/* 방법1() */
 .pop_section_main {
     width: 92%;
     padding: 4%;
@@ -279,6 +280,16 @@ li {
 .pop_section_main>article>div {
     width: 92%;
     padding: 4%;   
+    text-align: center;
+}
+/* 방법2(리스트목록전용) */
+.pop_section_mainList {
+    width: 100%;
+    padding-top: 4%;
+}
+.pop_section_mainList>article {
+    width: 92%;
+    padding: 2% 4% 4% 2%;
     text-align: center;
 }
 /* form부분 */
@@ -306,6 +317,11 @@ li {
     width: 55%;
 }
 .col2>input {
+    width: 90%;
+    height: 1.5rem;
+    border: transparent;
+}
+.col2>p {
     width: 90%;
     height: 1.5rem;
     border: transparent;
@@ -565,6 +581,9 @@ li {
         width: 96%;
         height: 85%;
     }
+    /* .wrap {
+        height: 100%;
+    } */
     /* index_from>header() 영역 */
     /* 상단헤더바 폭 변경 */
     .pop_header {

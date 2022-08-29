@@ -5,7 +5,7 @@ $id = $_POST['userId'];
 $pw = $_POST['userPw'];
 $name = $_POST['userName'];
 $email = $_POST['userEmail'];
-$phone = $_POST['userPhon'];
+$phone = $_POST['userPhone'];
 
 $sql = "INSERT INTO project_user SET
 id = '$id',

@@ -1,5 +1,6 @@
 <?php
- 
+     include ("../lib/dbconn.php");
+
     //id만 GET으로 전달받을 수 있음
     $userId= $_GET['userId'];
  
@@ -10,10 +11,16 @@
     $birth= $_POST['birth'];
     $email= $_POST['email'];
  
-    include "../lib/dbconn.php";
+
  
     // 업데이트 쿼리문
-    $sql= "UPDATE member SET userPassword='$userPassword', userName='$userName', tel='$tel', birth='$birth', email='$email' WHERE userId='$userId'";
+    $sql= "UPDATE member SET 
+    userPassword='$userPassword', 
+    userName='$userName', 
+    tel='$tel', 
+    birth='$birth', 
+    email='$email' 
+    WHERE userId='$userId'";
     mysqli_query($conn, $sql);
     mysqli_close($conn);
  

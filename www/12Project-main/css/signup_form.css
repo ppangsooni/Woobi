@@ -224,7 +224,7 @@ margin 값 상의함 */
 /* 로그인페이지 & 나의정보페이지와
 margin 값 상의함 */
 .userIdWrap, .userPwWrap
-,.userPwCheckWrap,.userPhonWrap
+,.userPwCheckWrap,.userPhoneWrap
 ,.userEmailWrap, .userNameWrap {
     margin-bottom: 2%;
     width: 98%;
