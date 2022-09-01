@@ -1,4 +1,13 @@
+<?php
+include("common.php");
 
+$sql = "
+select *
+from project_board
+";
+$result = $conn->query($sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1233,17 +1242,17 @@
 
                 <!-- ---------------커뮤니티------------------ -->
                 <div id="community-list">
-                    
+                    <?php while ($row = mysqli_fetch_assoc($result)) { ?>
                     <h3 id="view-id">추천인
-                        
+                        <?php echo $row['writer'];?>
                     </h3>
                     <h2 id="view-content">
-                       
+                        <?php echo $row['title'];?>
                     </h2>
                     <button id="good">좋아요</button>
                     <button id="comment">댓글</button>
                     <button id="share">공유</button>
-                    
+                    <?php }?>
                     <div>
                         <a id="community-write" href="./_board/write.php">말해라!</a>
                     </div>
@@ -1252,34 +1261,8 @@
         </div>
 
     </section>
-    <footer class="footer">
-        <div class="footer_wrap">
-            <div>
-                <div class="footer_top">
-                    <p>wt12</p>
-                    <div class="footerBtn">
-                        <div class="footerBtn_Ch"></div>
-                    </div>
-        
-                </div>
-                <div class="footer_center">
-                    <ul>
-                        <li>대표이사 : 김원투</li>
-                        <li>부산광역시 해운대구 우2동 해운대로 407 신세계프라자 10층</li>
-                        <li>통신판매업신고번호 : 2020-부산해운대-0000 <a>사업자정보확인</a></li>
-                        <li>대표이메일 : 12master@wt.net &VerticalSeparator; 고객센터 : 1544 - 1234</li>
-                    </ul>
-                </div>
-                <div class="footer_bottom">
-                    <ul>
-                        <li><a> 이용약관</a></li>
-                        <li><a> 개인정보 처리방침</a></li>
-                        <li><a> 위치기반서비스 이용약관</a></li>
-                        <li><a> 법적고지</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <footer>
+                     푸터
     </footer>
 
     <div id="topBtn">

@@ -68,3 +68,16 @@ const topBtn = document.getElementById('topBtn');
 topBtn.onclick = () => {
     window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
 }
+//--------------------footer------------------------------
+// footer영역 버튼
+let footerBtn = document.querySelector('.footerBtn'),
+    footerBtn_Ch = document.querySelector('.footerBtn_Ch'),
+    footerSlide = document.querySelector('.footer_center');
+
+    footerBtn.addEventListener('click', function() {   
+    if (footerSlide.style.display == 'none') {
+        footerSlide.style.display = 'block';        
+    } else {
+        footerSlide.style.display = 'none';     
+    } 
+});

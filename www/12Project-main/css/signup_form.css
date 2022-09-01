@@ -19,8 +19,8 @@ a {
     text-decoration: none;
 }
 
-/* íšŒì›ê°€ì… í˜ì´ì§€ Background */
-/* (ë¡œê·¸ì¸í˜ì´ì§€ & ë‚˜ì˜ì •ë³´í˜ì´ì§€ì™€ ì¼ë¶€ë™ì¼) */
+/* È¸¿ø°¡ÀÔ ÆäÀÌÁö Background */
+/* (·Î±×ÀÎÆäÀÌÁö & ³ªÀÇÁ¤º¸ÆäÀÌÁö¿Í ÀÏºÎµ¿ÀÏ) */
 .loginPage {
     position: relative;
     width: 100%;
@@ -35,8 +35,8 @@ a {
     /* opacity: 80%; */
 }
 .loginPage_bgTop {
-    /* ë¡œê·¸ì¸í˜ì´ì§€ & ë‚˜ì˜ì •ë³´í˜ì´ì§€ì™€
-     height ê°’ ìƒì˜í•¨ */
+    /* ·Î±×ÀÎÆäÀÌÁö & ³ªÀÇÁ¤º¸ÆäÀÌÁö¿Í
+     height °ª »óÀÇÇÔ */
     height: 28%; 
     width: 100%;
     background: linear-gradient(60deg, #009FF5 0%, #59B3A7 100%);
@@ -63,15 +63,15 @@ a {
     margin-bottom:-7px; /*Fix for safari gap*/
 }
 .loginPage_bgFooter {
-    /* ë¡œê·¸ì¸í˜ì´ì§€ & ë‚˜ì˜ì •ë³´í˜ì´ì§€ì™€
-     height ê°’ ìƒì˜í•¨ */
+    /* ·Î±×ÀÎÆäÀÌÁö & ³ªÀÇÁ¤º¸ÆäÀÌÁö¿Í
+     height °ª »óÀÇÇÔ */
     content: "";
     height: 70%;
     width: 100%;
     background-color: #EEE8A9;
 }
-/* íšŒì›ê°€ì… í˜ì´ì§€ Background Animation */
-/* (ë¡œê·¸ì¸í˜ì´ì§€ & ë‚˜ì˜ì •ë³´í˜ì´ì§€ì™€ ë™ì¼) */
+/* È¸¿ø°¡ÀÔ ÆäÀÌÁö Background Animation */
+/* (·Î±×ÀÎÆäÀÌÁö & ³ªÀÇÁ¤º¸ÆäÀÌÁö¿Í µ¿ÀÏ) */
 .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
 }
@@ -99,8 +99,8 @@ a {
         transform: translate3d(85px,0,0);
     }
 }
-/* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
-/* (ë¡œê·¸ì¸í˜ì´ì§€ & ë‚˜ì˜ì •ë³´í˜ì´ì§€ì™€ ë™ì¼) */
+/* »ó´Ü ·Î°í¿µ¿ª */
+/* (·Î±×ÀÎÆäÀÌÁö & ³ªÀÇÁ¤º¸ÆäÀÌÁö¿Í µ¿ÀÏ) */
 .loginTopWrap {
     top: 10%;
     left: 41.5%;
@@ -132,9 +132,9 @@ a {
 .loginTopWrap_logo:hover .loginTop_home {
     display: block;
 }
-/* íšŒì›ê°€ì… ë©”ì¸ì˜ì—­ */
-/* íšŒì›ê°€ì… ë©”ì¸ì˜ì—­(loginWrap)ì— í‚¤ì—…ì‹œ loginWrapBgì˜ opacity ë³€ê²½ */
-/* (ë¡œê·¸ì¸í˜ì´ì§€ & ë‚˜ì˜ì •ë³´í˜ì´ì§€ì™€ ì¼ë¶€ë™ì¼) */
+/* È¸¿ø°¡ÀÔ ¸ŞÀÎ¿µ¿ª */
+/* È¸¿ø°¡ÀÔ ¸ŞÀÎ¿µ¿ª(loginWrap)¿¡ Å°¾÷½Ã loginWrapBgÀÇ opacity º¯°æ */
+/* (·Î±×ÀÎÆäÀÌÁö & ³ªÀÇÁ¤º¸ÆäÀÌÁö¿Í ÀÏºÎµ¿ÀÏ) */
 .loginWrapBg {
     content: "";
     top: 22%;
@@ -184,8 +184,8 @@ a {
     flex-direction: column;
     color: #E0952C;
 }
-/* ë¡œê·¸ì¸í˜ì´ì§€ & ë‚˜ì˜ì •ë³´í˜ì´ì§€ì™€
-ìƒì˜í•¨(ì¶”ê°€ë¨) */
+/* ·Î±×ÀÎÆäÀÌÁö & ³ªÀÇÁ¤º¸ÆäÀÌÁö¿Í
+»óÀÇÇÔ(Ãß°¡µÊ) */
 .uesr_inputTop {
     width: 98%;
     height: 1rem;
@@ -211,8 +211,8 @@ a {
     border: transparent solid 1px;
     cursor: pointer;
 }
-/* ë¡œê·¸ì¸í˜ì´ì§€ & ë‚˜ì˜ì •ë³´í˜ì´ì§€ì™€
-margin ê°’ ìƒì˜í•¨ */
+/* ·Î±×ÀÎÆäÀÌÁö & ³ªÀÇÁ¤º¸ÆäÀÌÁö¿Í
+margin °ª »óÀÇÇÔ */
 .loginFormBox>div>label {
 
     font-size: smaller;
@@ -221,10 +221,10 @@ margin ê°’ ìƒì˜í•¨ */
     margin-top: 2%;
     margin-bottom: 1%;
 }
-/* ë¡œê·¸ì¸í˜ì´ì§€ & ë‚˜ì˜ì •ë³´í˜ì´ì§€ì™€
-margin ê°’ ìƒì˜í•¨ */
+/* ·Î±×ÀÎÆäÀÌÁö & ³ªÀÇÁ¤º¸ÆäÀÌÁö¿Í
+margin °ª »óÀÇÇÔ */
 .userIdWrap, .userPwWrap
-,.userPwCheckWrap,.userPhoneWrap
+,.userPwCheckWrap,.userPhonWrap
 ,.userEmailWrap, .userNameWrap {
     margin-bottom: 2%;
     width: 98%;
@@ -254,7 +254,7 @@ margin ê°’ ìƒì˜í•¨ */
     letter-spacing: 2pt;
 }
 
-/* í•˜ë‹¨ footer */
+/* ÇÏ´Ü footer */
 .loginBottomWrap {
     top: 92%;
     left: 41.5%;
@@ -266,18 +266,18 @@ margin ê°’ ìƒì˜í•¨ */
     color: rgb(151, 151, 151); 
 }
 @media all and (max-width:1890px) {
-    /* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
+    /* »ó´Ü ·Î°í¿µ¿ª */
     .loginTopWrap {
         left: 41.5%;
     }
-    /* í•˜ë‹¨ footer */
+    /* ÇÏ´Ü footer */
     .loginBottomWrap {
         left: 41.5%;
     }
 }
 
 @media all and (max-width:1690px) {
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 40%;
         height: 30rem;
@@ -289,41 +289,41 @@ margin ê°’ ìƒì˜í•¨ */
 }
 
 @media all and (max-width:1590px) {
-    /* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
+    /* »ó´Ü ·Î°í¿µ¿ª */
     .loginTopWrap {
         left: 39.5%;
     }
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 38%;
     }
     .loginWrap {
         left: 38%;
     }
-    /* í•˜ë‹¨ footer */
+    /* ÇÏ´Ü footer */
     .loginBottomWrap {
         left: 39.5%;
     }   
 }
 @media all and (max-width:1390px) {
-    /* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
+    /* »ó´Ü ·Î°í¿µ¿ª */
     .loginTopWrap {
         left: 40.5%;
     }
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 38%;
     }
     .loginWrap {
         left: 38%;
     }
-    /* í•˜ë‹¨ footer */
+    /* ÇÏ´Ü footer */
     .loginBottomWrap {
         left: 40.5%;
     }   
 }
 @media all and (max-width:1290px) {
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 36%;
     }
@@ -333,7 +333,7 @@ margin ê°’ ìƒì˜í•¨ */
 }
 
 @media all and (max-width:1080px) {
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 34%;
     }
@@ -343,18 +343,18 @@ margin ê°’ ìƒì˜í•¨ */
 }
 
 @media all and (max-width:1024px) {
-    /* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
+    /* »ó´Ü ·Î°í¿µ¿ª */
     .loginTopWrap {
         left: 39.5%;
     }
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 32%;
     }
     .loginWrap {
         left: 32%;
     }
-    /* í•˜ë‹¨ footer */
+    /* ÇÏ´Ü footer */
     .loginBottomWrap {
         left: 39.5%;
     }
@@ -362,27 +362,27 @@ margin ê°’ ìƒì˜í•¨ */
 
 
 @media all and (max-width:890px) {
-    /* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
+    /* »ó´Ü ·Î°í¿µ¿ª */
     .loginTopWrap {
         left: 40.5%;
     }
     .loginTop_home {
         width: 100%;
     }
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         height: 31rem;
     }
     .loginWrap {
         height: 31rem;
     }
-    /* í•˜ë‹¨ footer */
+    /* ÇÏ´Ü footer */
     .loginBottomWrap {
         left: 40.5%;
     }
 }
 @media all and (max-width:790px) {
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 30%;
     }
@@ -392,12 +392,12 @@ margin ê°’ ìƒì˜í•¨ */
 }
 
 @media all and (max-width:690px) {
-    /* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
+    /* »ó´Ü ·Î°í¿µ¿ª */
     .loginTopWrap {
         top: 5%;
         left: 43%;
     }
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         top: 18%;
         left: 29%;
@@ -410,7 +410,7 @@ margin ê°’ ìƒì˜í•¨ */
         width: 19.5rem;
         height: 33rem;
     }
-    /* í•˜ë‹¨ footer */
+    /* ÇÏ´Ü footer */
     .loginBottomWrap {
         top: 90%;
         left: 43%;
@@ -419,11 +419,11 @@ margin ê°’ ìƒì˜í•¨ */
 }
 
 @media all and (max-width:640px) {
-    /* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
+    /* »ó´Ü ·Î°í¿µ¿ª */
     .loginTopWrap {
         left: 44%;
     }
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 25%;
         width: 20.5rem;
@@ -432,7 +432,7 @@ margin ê°’ ìƒì˜í•¨ */
         left: 25%;
         width: 20.5rem;
     }
-    /* í•˜ë‹¨ footer */
+    /* ÇÏ´Ü footer */
     .loginBottomWrap {
         left: 44%;
     }
@@ -440,14 +440,14 @@ margin ê°’ ìƒì˜í•¨ */
 }
 
 @media all and (max-width:590px) {
-    /* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
+    /* »ó´Ü ·Î°í¿µ¿ª */
     .loginTopWrap {
         left: 41%;
     }
     .loginTop_home {
         width: 100%;
     }
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 17.5%;
         width: 22.5rem;
@@ -458,7 +458,7 @@ margin ê°’ ìƒì˜í•¨ */
         width: 22.5rem;
         height: 35rem;
     }
-    /* í•˜ë‹¨ footer */
+    /* ÇÏ´Ü footer */
     .loginBottomWrap {
         left: 41%;
         bottom: 0%;
@@ -466,7 +466,7 @@ margin ê°’ ìƒì˜í•¨ */
 
 }
 @media all and (max-width:540px) {
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 14%;
         width: 22.5rem;
@@ -477,11 +477,11 @@ margin ê°’ ìƒì˜í•¨ */
     }
 }
 @media all and (max-width:490px) {
-    /* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
+    /* »ó´Ü ·Î°í¿µ¿ª */
     .loginTopWrap {
         left: 40%;
     }
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 4%;
         width: 25.5rem;
@@ -495,7 +495,7 @@ margin ê°’ ìƒì˜í•¨ */
     .login_subWrap_2 {
         top: 44%;
     }
-    /* í•˜ë‹¨ footer */
+    /* ÇÏ´Ü footer */
     .loginBottomWrap {
         left: 34%;
         width: 30%;
@@ -503,11 +503,11 @@ margin ê°’ ìƒì˜í•¨ */
 }
 
 @media all and (max-width:468px) {
-    /* ìƒë‹¨ ë¡œê³ ì˜ì—­ */
+    /* »ó´Ü ·Î°í¿µ¿ª */
     .loginTopWrap {
         left: 39%;
     }
-    /* ë¡œê·¸ì¸ ë©”ì¸ì˜ì—­ */
+    /* ·Î±×ÀÎ ¸ŞÀÎ¿µ¿ª */
     .loginWrapBg {
         left: 6%;
         width: 87.5%;
