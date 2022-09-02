@@ -15,14 +15,13 @@
     <title>BAAB::CINEMA</title>
 </head>
 <body>
-
     <div class="bg">
         <!---------------background_scroll(bgScroll.php)------------------------------------------------>
         <?php include "./lib/bgScroll.php" ?>
         <div class="bg_macbook">
             <img src="https://i.ibb.co/PYr4rTt/ipd1.png">
-            <div class="screen">
-                <div class="wrap">
+            <div class="screen" id="screen">
+                <div class="wrap" >
                     <!---------------header------------------------------------------------>
                     <header class="header">
                         <!-----header _ ¿µ¿ª--------------------->
@@ -50,6 +49,10 @@
                             </ul>
                         </div>
                     </header>
+                    <section>
+                        
+                    </section>
+
                     <!---------------menu(nav)------------------------------------------------>
                     <nav class="menuSlide">
                         <div class="menuPage">
@@ -181,5 +184,5 @@
 
     </div>
 </body>
-<script src="./js/script_index.js"></script>
+<script src="./js/script_index.js">alert</script>
 </html>

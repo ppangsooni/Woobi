@@ -5,7 +5,7 @@
 
     unset($_SESSION['userId']);
     unset($_SESSION['userName']);
-    unset($_SESSION['grane']);
+    unset($_SESSION['grade']);
     unset($_SESSION['userPoint']);
 
     echo "

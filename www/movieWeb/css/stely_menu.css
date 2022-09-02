@@ -244,6 +244,22 @@
     padding: 2%;
     color: white;
 }
+@media all and (max-width:1680px) {
+    .menuSection_un {
+        height: 7rem;
+    }
+    .menuSection_center>div>ul>div>li>a {
+        justify-content:start;
+        
+    }
+    .menuS_t_quickList>a>div {
+        font-size: smaller;
+    }
+    .menuSection_center>div>ul>div>li>a {
+        font-size: smaller;
+    }
+
+}
 @media all and (max-width:680px) {
     /* >nav(/header_menu.php) 영역 */
     /* 로그인 영역 사이즈 변경 */

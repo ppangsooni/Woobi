@@ -6,24 +6,24 @@
  
     $userId="";
     $userName="";
-    $grane=""; //회원등급 : 1~5등급 [1등급:관리자, 5등급:신규회원]
+    $grade=""; //회원등급 : 1~5등급 [1등급:관리자, 5등급:신규회원]
     $userPoint="";
 
-    $potoplay_number="";
-    $potopaly_title="";
-    $content="";
+    $potopaly_number ="";
+    $potopaly_title ="";
+    $potopaly_content ="";
     $potopaly_date ="";
     $potppaly_like  ="";
 
  
     if( isset($_SESSION['userId'])) $userId= $_SESSION['userId'];
     if( isset($_SESSION['userName'])) $userName= $_SESSION['userName'];
-    if( isset($_SESSION['grane'])) $userlevel= $_SESSION['grane'];
+    if( isset($_SESSION['grade'])) $userlevel= $_SESSION['grade'];
     if( isset($_SESSION['userPoint'])) $userPoint= $_SESSION['userPoint'];
 
     if( isset($_SESSION['potoplay_number'])) $userId= $_SESSION['potoplay_number'];
     if( isset($_SESSION['potopaly_title'])) $userName= $_SESSION['potopaly_title'];
-    if( isset($_SESSION['content'])) $userlevel= $_SESSION['content'];
+    if( isset($_SESSION['potopaly_content'])) $userlevel= $_SESSION['potopaly_content'];
     if( isset($_SESSION['potopaly_date'])) $userPoint= $_SESSION['potopaly_date']; 
     if( isset($_SESSION['potppaly_like'])) $userPoint= $_SESSION['potppaly_like']; 
 ?>
@@ -34,7 +34,3 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/5525/5525279.png" alt="home">
                 </a>
             </div>
-
-
-
-        

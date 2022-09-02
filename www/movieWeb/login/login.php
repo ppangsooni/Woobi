@@ -1,5 +1,5 @@
 <?php
- 
+    session_start();
     $userId= $_POST['userId'];
     $userPassword= $_POST['userPassword'];
 
@@ -56,10 +56,11 @@
     // $row = mysqli_fetch_assoc($result);
  
     // 세션에 저장
-    session_start();
+    
     $_SESSION['userId']=$row['userId'];
     $_SESSION['userName']=$row['userName'];
-    $_SESSION['grane']=$row['grane'];
+    // die($row['grade']);
+    $_SESSION['grade']=$row['grade'];
     $_SESSION['userPoint']=$row['userPoint'];
  
     // 세션저장이 되었으니 index.php페이지로 이동

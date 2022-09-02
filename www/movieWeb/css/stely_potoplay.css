@@ -1,14 +1,33 @@
+.potoplay_writeBtn {
+    width: 20%;
+    border: #1E2C5C 2px solid;
+    border-radius: 15px;
+    margin-top: 3%;
+    text-align: center;
+    font-size: small;
+    float: left;
+}
+.potoplay_writeBtn:hover {
+    width: 20%;
+    background-color: #1E2C5C;
+    border-radius: 15px;
+    margin-top: 3%;
+    text-align: center;
+    font-size: small;
+    float: left;
+}
 .pop_section {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 .pop_section_mainList>article{
     display: flex;
     flex-direction: column;
+    margin-bottom: 3%;
 }
 .pop_section_main_header{
     width: 100%;
     clear: both;
-    background-color: bisque;
+    box-shadow: 2px 3px 3px -4px #1e2C5C;
 }
 .pop_section_main_header>h4 {
     margin: 0%;
@@ -75,7 +94,6 @@
 }
 
 .screening_movie_listWrap {
-    /* position: absolute; */
     width: auto;
     height: 100%;
     display: flex;
@@ -85,7 +103,7 @@
     cursor: pointer;
 }
 .screening_movie_listBox {
-    width: 20rem;
+    width: 17rem;
     height: 98%;
     padding: 0% 5%;
     display: flex;
@@ -112,4 +130,152 @@
     cursor: pointer;
     font-size: large;
     font-family: 'Do Hyeon', sans-serif;
+}
+/* potopaly_list.php (�Խ��Ǹ��) */
+.pop_section_main_centerList {
+    min-height: 56rem;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 48%);
+}
+/* potopaly_list.php (�Խ��Ǹ��) */
+.potoplay_listContainer {
+    width: 96%;
+    padding: 2%;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 48%);
+}
+
+.potoplay_listWrap {
+    width: 92%;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 4px 5px 9px -2px #1e2C5C;
+}
+
+.potoplay_listImgWrap {
+    width: 96%;
+    height: 20rem;
+    padding: 2%;
+    text-align: center;
+
+}
+.potoplay_listImgWrap>img {
+    max-width: 96%;
+    max-height: 21rem;
+    border-radius: 15px;
+}
+.potoplay_listTitleWrap {
+    padding: 0 5%;
+}
+.potoplay_listTextWrap {
+    width: 96%;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+}
+.potoplay_listText {
+    width: 70%;
+}
+.potoplay_listLike {
+    width: 26%;
+    padding: 5%;
+}
+.potoplay_listLikeBtn {
+    width: 3rem;
+    height: 3rem;
+    background-color: #ecd5e3;
+    border: 1px solid transparent;
+    border-radius: 25%;
+    text-align: center;    
+}
+.potoplay_listLikeBtn>img {
+    width:  95%;
+    height: 95%;
+    margin: 2%;
+}
+.potoplay_listText>p>img {
+    width: 1.5rem
+}
+.potoplay_listText>p {
+    margin: 0;
+    margin-bottom: 4%;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.potoplay_listText>p>span {
+    margin: 0% 2%;
+}
+.potoplay_listLikeBtn_ChHover {
+    display: none;
+}
+
+.potoplay_listLikeBtn:hover .potoplay_listLikeBtn_Ch {
+    display: none;
+}
+.potoplay_listLikeBtn:hover .potoplay_listLikeBtn_ChHover {
+    display: block;
+}
+
+/* potoplay_list_view.php */
+.pop_section2,.pop_section3 {
+    margin-top: 18%;
+    width: 100%;
+    height: 100%;
+}
+@media all and (max-width:1680px) {
+    .potoplay_listImgWrap {
+        height: 17rem;   
+    }
+}
+@media all and (max-width:1090px) {
+    .potoplay_listImgWrap {
+        height: 15rem;   
+    }
+}
+
+@media all and (max-width:890px) {
+    .potoplay_listImgWrap {
+        height: 18rem;   
+    }
+}
+@media all and (max-width:680px) {
+    .potoplay_listImgWrap {
+        height: 20rem;   
+    }
+    .potoplay_listTitleWrap>p:nth-child(1) {
+        display: none;
+    }
+    .potoplay_listText>p:nth-child(2) {
+        display: none;
+    }
+    .potoplay_listLike {
+        position: absolute;
+        margin-left: 20%;
+        margin-top: -10%;
+    }
+
+}
+@media all and (max-width:590px) {
+    .potoplay_listImgWrap {
+        height: 18rem;   
+    }
+}
+@media all and (max-width:490px) {
+
+    .potoplay_listImgWrap {
+        height: 15rem;   
+    }
+}
+@media all and (max-width:460px) {
+    
+    .potoplay_writeBtn {
+        margin-left: 6%;
+    }
+    .potoplay_listImgWrap {
+        height: 14rem;   
+    }
 }

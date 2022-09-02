@@ -1,35 +1,33 @@
 
-<?php 
+<?php
     include("../lib/dbconn.php");
-
-    $userId = $_SESSION['userId'];
-        if (!$userId) {
-            echo "로그인을 해주세요";
-        }
-    $sql = "
-    SELECT *
-    FROM potoplay_board
-    WHERE userId = '$userId'";
-
-    $result = $mysqlboardresult = mysqli_query( $conn, $sql );
+    $mysqlboard = "SELECT * FROM potoplay_board order by potoplay_number desc";
+    
+    $result = $mysqlboardresult = mysqli_query( $conn, $mysqlboard );
     
     // $row = mysqli_fetch_array( $mysqlboardresult );
-    
-     while($row = mysqli_fetch_assoc($result)){ ?>
-     <a href="potoplay_list_view_form.php?potoplay_number=<?php echo $row['potoplay_number']?>">
+
+?>
+
+
+<?php while($row = mysqli_fetch_assoc($result)){ ?>
+<a href="potoplay_list_view_form.php?potoplay_number=<?php echo $row['potoplay_number']?>">
+
     <div class="potoplay_listWrap">
-        <div class="potoplay_listImgWrap" >
+    
+        <div class="potoplay_listImgWrap">
+            
             <img class="potoplay_listImg" src="<?php echo $row['image'];?>" >
         </div>
         <div class="potoplay_listTitleWrap">
             <p><?php echo $row['potoplay_number'];?></p>
-        <p class="">title:<?php echo $row['potoplay_title'];?></p>
+            <p class="">title:<?php echo $row['potoplay_title'];?></p>
         </div>
         <div class="potoplay_listTextWrap">
             <div class="potoplay_listText">
                 
                 <p><img src="https://i.ibb.co/Sfw1Kty/likeA.png" alt="좋아요"><?php echo $row['potoplay_like'];?></p>
-                <p><span><?php echo $row['userId'];?> </span>|<span><?php echo  $row['potoplay_date'];?><</span></p>
+                <p><span><?php echo $row['userId'];?> </span><br><span><?php echo  $row['potoplay_date'];?><</span></p>
             </div>
 
             <div class="potoplay_listLike">
@@ -42,4 +40,3 @@
     </div>
 </a>
 <?php } ?>
-

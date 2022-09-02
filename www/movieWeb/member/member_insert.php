@@ -1,5 +1,6 @@
 <?php
-include "../lib/dbconn.php";
+include("../lib/dbconn.php");
+
     
     
     $userId= $_POST['userId'];
@@ -37,18 +38,18 @@ include "../lib/dbconn.php";
     //회원정보 insert
  
     //insert 쿼리문
-    $sql= "INSERT INTO member(userId, userPassword, userName, tel, birth, email, grade, userPoint) VALUES('$userId','$userPassword','$userName','$tel','$birth','$email','5','0')";
+    $sql= "INSERT INTO member(userId, userPassword, userName, tel, birth, email, grade, userPoint) VALUES('$userId', '$userPassword', '$userName','$tel','$birth','$email','5','0')";
  
-    // $result = $conn -> query($sql);
+    $conn -> query($sql);
     // 쿼리문 실행
-    mysqli_query($conn,$sql);
+    // mysqli_query($conn,$sql);
     mysqli_close($conn);
  
     // 데이터 저장이 완료된 후 index.php로 페이지 이동
     echo "
         <script>
         window.location.href='../index.php';
-        alert('가입이 완료되었습니다.;')
+        alert('가입이 완료되었습니다. &#9787;')
         </script>
     "
     ;
