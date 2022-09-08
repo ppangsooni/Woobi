@@ -26,7 +26,7 @@
     $row2 = mysqli_fetch_array( $mysql2result );
     $row3 = mysqli_fetch_array( $mysql3result );
     $row4 = mysqli_fetch_array( $mysql4result );
-    $row5 = mysqli_fetch_array( $mysql5result )
+    $row5 = mysqli_fetch_array( $mysql5result );
     // while( $row1 = mysqli_fetch_array( $mysql1result ) ) {
     //     echo '
     //          src="' . $row1[ 'image' ] . '" alt="탑건_영화_포스터"/>

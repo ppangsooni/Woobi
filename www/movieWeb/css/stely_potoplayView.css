@@ -208,3 +208,22 @@
     width: 4rem;
     height: 4rem;
 }
+
+@media all and (max-width:680px) {
+    .potoplay_view_listTitleWrap {
+        padding: 5% 5%;
+    }
+    .potoplay_write_listImgWrap {
+        padding: 5% 5%;
+        width: 90%;
+    }
+    .potoplay_write_listTextWrap {
+        padding: 5% 5%;
+        width: 90%;
+    }
+    .potoplay_write_listLikeWrap {
+        padding: 5% 5%;
+        width: 90%;
+    }
+
+}
