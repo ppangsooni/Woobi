@@ -3,7 +3,7 @@
 // document.getElementById : 특정 객체 태그 아이디를 지정합니다 
 // scrollTop : 특정 태그 스크롤 위치를 지정합니다        
 
-
+ 
 
 /* [html 최초 로드 및 이벤트 상시 대기 실시] */
 window.onload = function() {

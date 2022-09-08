@@ -16,7 +16,7 @@
     <div class="potoplay_listWrap">
     
         <div class="potoplay_listImgWrap">
-            
+             
             <img class="potoplay_listImg" src="<?php echo $row['image'];?>" >
         </div>
         <div class="potoplay_listTitleWrap">

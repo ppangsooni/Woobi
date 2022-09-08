@@ -13,8 +13,8 @@
     $potopaly_title ="";
     $potopaly_content ="";
     $potopaly_date ="";
-    $potppaly_like  ="";
-
+    $potppaly_like  =""; 
+ 
  
     if( isset($_SESSION['userId'])) $userId= $_SESSION['userId'];
     if( isset($_SESSION['userName'])) $userName= $_SESSION['userName'];

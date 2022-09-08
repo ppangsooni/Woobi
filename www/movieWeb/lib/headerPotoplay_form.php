@@ -11,7 +11,7 @@
 
     $potopaly_number ="";
     $potopaly_title ="";
-    $potopaly_content ="";
+    $potopaly_content =""; 
     $potopaly_date ="";
     $potppaly_like  ="";
 

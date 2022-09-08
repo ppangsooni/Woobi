@@ -13,7 +13,7 @@
     if( isset($_SESSION['grane'])) $grane= $_SESSION['grane'];
     if( isset($_SESSION['userPoint'])) $userPoint= $_SESSION['userPoint'];
 ?>
-<!-- 헤더 영역의 로고와 회원가입/로그인 표시 영역 -->
+<!-- 헤더 영역의 로고와 회원가입/로그인 표시 영역 --> 
         <div class="menuPage_top">
             
             <!-- 1. 로고영역 -->

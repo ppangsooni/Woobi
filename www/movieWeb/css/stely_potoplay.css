@@ -131,14 +131,14 @@
     font-size: large;
     font-family: 'Do Hyeon', sans-serif;
 }
-/* potopaly_list.php (�Խ��Ǹ��) */
+/* potopaly_list.php  */
 .pop_section_main_centerList {
     min-height: 56rem;
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, 48%);
 }
-/* potopaly_list.php (�Խ��Ǹ��) */
+/* potopaly_list.php  */
 .potoplay_listContainer {
     width: 96%;
     padding: 2%;

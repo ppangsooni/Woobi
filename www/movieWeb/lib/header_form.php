@@ -13,7 +13,7 @@
     if( isset($_SESSION['userName'])) $userName= $_SESSION['userName'];
     if( isset($_SESSION['grade'])) $userlevel= $_SESSION['grade'];
     if( isset($_SESSION['userPoint'])) $userPoint= $_SESSION['userPoint'];
- 
+  
 ?>
 <!-- 헤더 영역의 로고와 회원가입/로그인 표시 영역 -->
             <!-- 헤더 영역의 네비게이션 메뉴 영역 -->

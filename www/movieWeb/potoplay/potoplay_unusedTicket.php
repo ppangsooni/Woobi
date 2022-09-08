@@ -3,8 +3,8 @@
     include("../lib/dbconn.php");
     $userId = $_SESSION['userId'];
         if (!$userId) {
-            echo "제작하신 포토플레이가 없습니다.<button>포토플레이 제작하기</button>";
-        }
+            echo "로그인을 해주세요<button>로그인하기</button>";
+        } 
 
 
     $sql = "
@@ -15,7 +15,7 @@
     $result = $mysqlboardresult = mysqli_query( $conn, $sql );
     
     // $row = mysqli_fetch_array( $mysqlboardresult );
-    
+     
      while($row = mysqli_fetch_assoc($result)){ ?>
      <a href="potoplay_list_view_form.php?potoplay_number=<?php echo $row['potoplay_number']?>">
     <div class="potoplay_listWrap">
@@ -32,13 +32,13 @@
             <div class="potoplay_listText">
                 
                 <p><img src="https://i.ibb.co/Sfw1Kty/likeA.png" alt="좋아요"><?php echo $row['potoplay_like'];?></p>
-                <p><span>작성자:<?php echo $row['userId'];?> </span>|<span>작성일<?php echo  $row['potoplay_date'];?><</span></p>
+                <p><span><?php echo $row['userId'];?> </span><span><?php echo  $row['potoplay_date'];?><</span></p>
             </div>
 
             <div class="potoplay_listLike">
                 <div class="potoplay_listLikeBtn">
-                    <img class="potoplay_listLikeBtn_Ch" src="https://i.ibb.co/TBnPDxS/likeB-1.png"  alt="좋아요 버튼">
-                    <img class="potoplay_listLikeBtn_ChHover" src="https://i.ibb.co/zxtKQdk/likeBH-1.png"  alt="좋아요 버튼">
+                    <img class="potoplay_listLikeBtn_Ch" src="https://i.ibb.co/TBnPDxS/likeB-1.png"  alt="좋아요">
+                    <img class="potoplay_listLikeBtn_ChHover" src="https://i.ibb.co/zxtKQdk/likeBH-1.png"  alt="좋아요">
                 </div>
             </div>
         </div>

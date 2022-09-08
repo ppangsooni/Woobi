@@ -5,7 +5,7 @@
     $password = "hye0";
 
     
-    try {
+    try { 
         $db = new PDO($dns, $username, $password);
         echo '접속성공 축하합니다!';
     } catch (PDOException $th) {

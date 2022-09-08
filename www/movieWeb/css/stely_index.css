@@ -742,6 +742,9 @@ li {
         width: 2rem;
         height: 2rem;
     }
+    .header_submenu_list>li {
+        font-size: smaller;
+    }
     /* SNS계정 아이콘 사이즈 변경 */
     .menuSection_b_snsicon {
         width: 2rem;

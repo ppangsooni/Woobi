@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="EUC-KR">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BaAB의 가족이 되어보세요">
@@ -15,7 +15,7 @@
     <title>내 포토플레이</title>
     
 </head>
-<body>
+<body> 
     <div class="bg">
         <!---------------background_scroll(bgScroll.php------------------------------------------------>
         <?php include "../lib/bgScroll.php"?>
@@ -34,7 +34,7 @@
                     </div>
                         <?php include "../lib/header_form.php" ?>
                     </div>
-                    <a href="./potoplay_write.php">
+                    <a href="./potoplay_write_form.php">
                         <div class="potoplay_writeBtn">
                             <span>포토플레이<br>제작하기</span>
                         </div>

@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="EUC-KR">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BaAB의 가족이 되어보세요">
@@ -63,7 +63,7 @@
                                         
                                     </div>
                                     <a href="potoplay_unusedTicket.php?userId=<?php echo $row['userId']?>"> 제작가능한 영화보기 </a>
-                                    <div class="potoplay_listContainer">
+                                    <div class="potoplay_listContainer"> 
                                          
                                         <?php include "./potoplay_userlist.php" ?> 
                                     </div>  

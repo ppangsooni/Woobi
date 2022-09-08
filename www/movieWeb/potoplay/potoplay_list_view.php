@@ -16,9 +16,8 @@
         <div class="potoplay_view_listTitleWrap">
             <p>no.<?php echo $row['potoplay_number'];?></p>
         <p class=""><?php echo $row['potoplay_title'];?></p>
-        </div>
+        </div> 
         <div class="potopalay_view_listImgWrap">
-            
             <img class="potopalay_view_listImg" src="<?php echo $row['image'];?>" >
         </div>
 
@@ -27,8 +26,8 @@
         <div class="potoplay_view_listLikeWrap">
             <div class="potoplay_view_listikeBtn">
                 <?php echo $row['potoplay_like'];?>
-                <img class="potoplay_listLikeBtn_Ch" src="https://i.ibb.co/TBnPDxS/likeB-1.png"  alt="좋아요 버튼">
-                <img class="potoplay_listLikeBtn_ChHover" src="https://i.ibb.co/zxtKQdk/likeBH-1.png"  alt="좋아요 버튼">
+                <img class="potoplay_listLikeBtn_Ch" src="https://i.ibb.co/TBnPDxS/likeB-1.png"  >
+                <img class="potoplay_listLikeBtn_ChHover" src="https://i.ibb.co/zxtKQdk/likeBH-1.png"  >
             </div>
         </div>                           
     </div>
