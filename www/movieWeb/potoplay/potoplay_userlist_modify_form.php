@@ -1,15 +1,7 @@
 <?php 
     session_start(); 
-    include("../lib/dbconn.php");
-    $userId = $_SESSION['userId'];
-        if (!$userId) {
-            echo "<script>
-            alert('로그인을 하여주세요');
-            history.back();</script>";
-
-        }
+    
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../css/stely_form.css">
     <link rel="stylesheet" type="text/css" href="../css/stely_potoplayView.css">
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/swHGtC0/logo1.png">
-    <title>포토플레이 작성하기</title>
+    <title>포토플레이 수정하기</title>
      
 </head>
 <body>
@@ -37,13 +29,13 @@
                             <a class="pop_header_back" href="back();">
                                 <img src="https://i.ibb.co/dB2ztsX/back.png" alt="back">
                             </a>
-                            <h2>포토플레이 작성하기</h2>
+                            <h2>포토플레이 수정하기</h2>
                         </div>
                         <?php include "../lib/header_form.php" ?>
                     </div>
                 </header>
                     <section class="pop_section2">                                
-                        <?php include "./potoplay_write.php"?>
+                        <?php include "./potoplay_userlist_modify.php"?>
                     </section>
                     <!---------------menu(nav)------------------------------------------------>
                 <div>

@@ -7,7 +7,7 @@
     SELECT *
     FROM potoplay_board
     WHERE potoplay_number = '$no'";
-    $result = $mysqlboardresult = mysqli_query( $conn, $sql );
+    $result = mysqli_query( $conn, $sql );
 
 ?>
 <?php while($row = mysqli_fetch_assoc($result)){ ?>
@@ -29,7 +29,8 @@
                 <img class="potoplay_listLikeBtn_Ch" src="https://i.ibb.co/TBnPDxS/likeB-1.png"  >
                 <img class="potoplay_listLikeBtn_ChHover" src="https://i.ibb.co/zxtKQdk/likeBH-1.png"  >
             </div>
-        </div>                           
+        </div> 
+        <a href='./potoplay_userlist_modify_form.php?potoplay_number=<?php echo $no?>' class='correction'> ¼öÁ¤</a>                          
     </div>
 
 <?php } ?>

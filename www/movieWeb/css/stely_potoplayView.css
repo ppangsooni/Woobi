@@ -209,6 +209,21 @@
     height: 4rem;
 }
 
+.correction {
+    display: block;
+    margin-top: 5%;
+    width: 10%;
+    height: 1.5rem;
+    padding-top: 1%;
+    padding-left: 0.5%;
+    font-size: medium;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #1E2C5C;
+    color: aliceblue;
+}
+
+
 @media all and (max-width:680px) {
     .potoplay_view_listTitleWrap {
         padding: 5% 5%;
