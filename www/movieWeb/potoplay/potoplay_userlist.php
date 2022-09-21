@@ -3,7 +3,7 @@
     include("../lib/dbconn.php");
     $userId = $_SESSION['userId'];
         if (!$userId) {
-            echo "로그인을 하여주세요";
+            echo "로그인을 하여주세요 <a href='../login/login_form.php'> 로그인바로가기</a>";
         }
     
     $sql = "
@@ -38,6 +38,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </a>
 <?php } ?>

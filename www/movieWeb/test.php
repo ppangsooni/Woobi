@@ -63,6 +63,7 @@
       while($rows = $result->fetch_assoc()) {
         echo $rows["id"].":".$rows["name"]."<br>";
       }
+      
     }
 
     page($start, $totalCount, $rowPerPage, $blockSet, "처음", "이전", "다음", "마지막");

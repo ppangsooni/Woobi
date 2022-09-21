@@ -30,7 +30,8 @@
                 <img class="potoplay_listLikeBtn_ChHover" src="https://i.ibb.co/zxtKQdk/likeBH-1.png"  >
             </div>
         </div> 
-        <a href='./potoplay_userlist_modify_form.php?potoplay_number=<?php echo $no?>' class='correction'> 수정</a>                          
+        <a href='./potoplay_userlist_modify_form.php?potoplay_number=<?php echo $no?>' class='correction'><div>수정</div></a>     
+        <a href='./potoplay_userlist_delete.php?potoplay_number=<?php echo $no?>' class='deleteBtn'><div>삭제</div></a>      
     </div>
 
 <?php } ?>

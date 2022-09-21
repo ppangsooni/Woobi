@@ -2,7 +2,7 @@
 include("../lib/dbconn.php");
 $no = $_GET['potoplay_number'];
 
-$potoplay_title = "";
+$potoplay_title = $_POST['potoplay_write_title'];
 // die($potoplay_title);
 $image = $_POST['potoplay_write_files'];
 $potoplay_content = $_POST['text'];
@@ -23,9 +23,9 @@ if($_FILES['image']['name']) {
 
     $fileName="image =  '".$dir . $newImage ."',";
 } 
-if($potoplay_title != '') {
-    $potoplay_title = $_POST['potoplay_write_title'];
-}
+// if(!$potoplay_title) {
+//     $potoplay_title = $_POST['potoplay_write_title'];
+// }
 $sql = "UPDATE potoplay_board set
 potoplay_title = '".$potoplay_title."',
 $fileName
@@ -38,13 +38,10 @@ $result = $conn->query($sql);
 	
 ?>
 	<script>
-		alert("<?php echo "수정되었습니다" ?>");
+		alert("<?php echo "수정되었습니다." ?>");
 	</script>
     <meta http-equiv="refresh" content="0 url=./potoplay_list_view_form.php?potoplay_number=<?php echo $no?>">
 <?php
-// } else {
-// 	echo "게시글 수정에 실패하였습니다.";
-// }
 
 	
 ?>
