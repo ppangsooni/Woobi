@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="EUC-KR">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+        <!-- Link Swiper's CSS -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="icon" type="image/x-icon" href="./img/oneandthree1text_icon.png">
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+
     <title>1/3 OAT:oneandthree::하루3끼니 중 1끼니의 즐거움:)</title>
 </head>
 <body>
@@ -140,17 +141,31 @@
                 </div>
                 <div class="main_banner_quick">
                     <div>
-                        <img src="https://i.ibb.co/sWGYqm0/close.png" alt="menu_close">
+                        <img src="https://i.ibb.co/YfpGjgk/mab.png" alt="mab_icon">
                         <span>매장찾기</span>
                     </div>
                     <div>
-                        <img src="https://i.ibb.co/sWGYqm0/close.png" alt="menu_close">
+                        <img src="https://i.ibb.co/CVWr5CK/order.png" alt="order_icon">
                         <span>가맹신청 ㆍ 문의</span>
                     </div>
                 </div>
             </main> 
+            <!-- 모바일버전(width: 690px)시 block -->
+            <section class="section_MBvar">
+                <div class="section_MBvar_fastOAT">
+                    <h4>FAST-OAT</h4>
+                    <h5>매장 선주문</h5>
+                    <img src="https://i.ibb.co/jZy2yXV/footer-fast-OAT.png" alt="footer-fast-OAT">
+                </div>
+                <span></span>
+                <div class="section_MBvar_homeOAT">
+                    <h4>HOME-OAT</h4>
+                    <h5>배달주문</h5>
+                    <img src="https://i.ibb.co/jZy2yXV/footer-fast-OAT.png" alt="footer-fast-OAT">
+                </div>
+            </section>
             <!-- OneAndThree's Menu -->
-            <section>
+            <section class="section_main_menulist">
                 <div class="main_menulistWrap">
                     <div class="main_menulist_top">
                         <div class="main_ml_topLeft">
@@ -174,7 +189,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/WFVSkRT/sandwich-cl06-01.jpg" alt="sandwich_에그마요">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>에그마요</strong>
                                             <p>부드러운 달걀과 고소한 마요네즈가 만나<br>더 부드러운 스테디셀러</p>
                                         </div>
@@ -183,7 +198,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/jTk9Vtf/sandwich-cl01-01.jpg" alt="sandwich_이탈리안 비엔티">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>이탈리안 비엔티</strong>
                                             <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! 전세계가 사랑하는 원앤드쓰리의 베스트셀러! Biggest Meatiest Tastiest, its’ B.M.T!</p>
                                         </div>
@@ -191,7 +206,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/d7zFc7j/sandwich-cl02-01.jpg" alt="sandwich_비엔티">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>비엔티</strong>
                                             <p>오리지널 아메리칸 스타일 베이컨의<br>풍미와 바삭함 그대로</p>
                                         </div>
@@ -199,7 +214,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/HHnq3yv/sandwich-cl04-01.jpg" alt="sandwich_햄">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>햄</strong>
                                             <p>기본 중에 기본!<br>풍부한 햄이 만들어내는<br>입 안 가득 넘치는 맛의 향연</p>
                                         </div>
@@ -207,7 +222,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/sRGpdN8/sandwich-cl05-01.jpg" alt="sandwich_참치">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>참치</strong>
                                             <p>남녀노소 누구나 좋아하는<br>담백한 참치와 고소한 마요네즈의<br>완벽한 조화</p>
                                         </div>
@@ -227,7 +242,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/0Qb2w8D/sandwich-fl01-01.jpg" alt="sandwich_로티세리 바비큐 치킨">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>로티세리 바비큐 치킨</strong>
                                             <p>촉촉한 바비큐 치킨의 풍미가득.<br>손으로 찢어 더욱 부드러운 치킨의 혁명</p>
                                         </div>
@@ -235,7 +250,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/SrpnDhg/sandwich-fl02-01.jpg" alt="sandwich_로스트 치킨">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>로스트 치킨</strong>
                                             <p>오븐에 구워 담백한 저칼로리<br>닭가슴살의 건강한 풍미</p>
                                         </div>
@@ -243,7 +258,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/KbfbQJr/sandwich-fl04-01.jpg" alt="sandwich_원쓰리 클럽">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>원쓰 클럽</strong>
                                             <p>명실공히 시그니처 원쓰!<br>치킨 슬라이스, 햄, 베이컨의 완벽한 앙상블</p>
                                         </div>
@@ -251,7 +266,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/DRgvwQD/sandwich-fl05-01.jpg" alt="sandwich_치킨 슬라이드">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>치킨 슬라이드</strong>
                                             <p>닭가슴살로 만든 치킨 슬라이스로 즐기는<br>담백한 맛!</p>
                                         </div>
@@ -259,7 +274,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/Fw8w74w/sandwich-fl06-01.jpg" alt="sandwich_베지">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>베지</strong>
                                             <p>갓 구운 빵과 신선한 7가지 야채로<br>즐기는 깔끔한 한끼</p>
                                         </div>
@@ -278,7 +293,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/hMcDLdj/sandwich-pm10-01.jpg" alt="sandwich_쉬림프">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>쉬림프</strong>
                                             <p> 탱글한 식감이 그대로 살아있는 통새우가<br>5마리 들어가 한 입 베어 먹을 때 마다<br>진짜 새우의 풍미가 가득</p>
                                         </div>
@@ -286,7 +301,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/MPsVxJf/sandwich-pm08-01.jpg" alt="sandwich_풀드 포크 바비큐">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>풀드 포크 바비큐</strong>
                                             <p>훈연한 미국 정통 스타일의 리얼 바비큐 풀드포크가 들어간 샌드위치</p>
                                         </div>
@@ -294,7 +309,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/zRpLdbT/sandwich-pm01-01.jpg" alt="sandwich_스테이크 & 치즈">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>스테이크 & 치즈</strong>
                                             <p>육즙이 쫙~<br>풍부한 비프 스테이크의 풍미가 입안 한가득</p>
                                         </div>
@@ -302,7 +317,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/5TNBS1D/sandwich-pm02-01.jpg" alt="sandwich_치킨 베이컨 아보카도">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>치킨 베이컨 아보카도</strong>
                                             <p>담백하게 닭가슴살로 만든 치킨 슬라이스와 베이컨,<br>부드러운 아보카도의 만남</p>
                                         </div>
@@ -310,7 +325,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/9syc6vp/sandwich-pm06-01.jpg" alt="sandwich_스파이시 이탈리안">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>스파이시 이탈리안</strong>
                                             <p>살라미, 페퍼로니가 입안 한가득!<br>쏘 핫한 이탈리아의 맛</p>
                                         </div>
@@ -318,7 +333,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/ggPwYjw/sandwich-pm07-01.jpg" alt="sandwich_치킨 데리야끼">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>치킨 데리야끼</strong>
                                             <p>담백한 치킨 스트립에 달콤짭쪼름한 원쓰<br>특제 데리야끼 소스와의 환상적인 만남</p>
                                         </div>
@@ -337,7 +352,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/0ZYzvfv/sandwich-bf01.png" alt="sandwich_햄, 에그 & 치즈">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>햄, 에그 & 치즈</strong>
                                             <p>푹신한 오믈렛과 햄의 가장 클래식한 조화</p>
                                         </div>
@@ -345,7 +360,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/LJrW2Y4/sandwich-bf02.png" alt="sandwich_웨스턴, 에그 & 치즈">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>웨스턴, 에그 & 치즈</strong>
                                             <p>토마토, 피망, 양파 세가지 야채가 더해져<br>더욱 신선한 하루 시작</p>
                                         </div>
@@ -353,7 +368,7 @@
                                     <div class="swiper-slide">  
                                         <div>
                                             <img src="https://i.ibb.co/t8wxvZK/sandwich-bf03.png" alt="sandwich_베이컨, 에그 & 치즈"> 
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>베이컨, 에그 & 치즈</strong>
                                             <p>오리지널 아메리칸 스타일 베이컨으로<br>더욱 풍성한 아침 식사</p>
                                         </div>
@@ -361,7 +376,7 @@
                                     <div class="swiper-slide">
                                         <div>
                                             <img src="https://i.ibb.co/nLnw7Z0/sandwich-bf04.png" alt="sandwich_스테이크, 에그 & 치즈">
-                                            <img src="img/main.png">
+                                            <img src="https://i.ibb.co/sp4hdvs/hover-look.png" alt="hover-look">
                                             <strong>스테이크, 에그 & 치즈</strong>
                                             <p>육즙 가득 비프 스테이크로<br>든든한 아침 식사</p>
                                         </div>
@@ -375,7 +390,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="oatWrap">
                 <div class="oat">
                     <div class="oat_top">
                         <div class="oat_HowToUse">
@@ -384,7 +399,7 @@
                         </div>
                         <div class="oat_history">
                             <div>
-                                <img src="https://i.ibb.co/ZYYbGsT/main.png" alt="oneandthree main logo">
+                                <img src="./img/main.png" alt="oneandthree main logo">
                             </div>
                             <div>
                                 <p>역사를 가진<br>No.1 프렌차이즈의 성장기</p>
@@ -396,7 +411,7 @@
                         <div class="oat_news">
                             <div class="board_head">
                                 <h2>What's New</h2>
-                                <p>써브웨이의 다양한 소식을<br>빠르게 전달해드립니다.</p>
+                                <p>원앤쓰리의 <br>다양한 소식을<br>빠르게 전달해드립니다.</p>
                             </div>
                             <div class="board_list">
                                 <ul>
@@ -407,29 +422,90 @@
                                 <a>more</a>
                             </div>
                         </div>
-                        <div class="oat_baner">
-                            <img src="https://i.ibb.co/nmH069Z/image.jpg" >
+                        <div class="oat_banner">
+                            <img src="https://i.ibb.co/68XP06m/sub-Banner.png" alt="sub-Banner" >
                         </div>
                     </div>
                 </div>
             </section>
         </div>
         <div class="wrapBottom">
-            <div>
-
+            <div class="wrapBottom_ChWrap">
+                <a>
+                    <div class="wrapBottom_Ch">
+                        <img src="https://i.ibb.co/JkgJ3Nc/footer-c.png" alt="footer-franchise_icon"/>
+                        <div>
+                            <span>프랜차이즈</span>
+                            <span>개설절차/투자비용 정보</span>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="wrapBottom_Ch">
+                        <img src="https://i.ibb.co/52vXwfj/footer-mab.png" alt="footer-branchOffice_icon"/>
+                        <div>
+                            <span>지사안내</span>
+                            <span>수도권/지방 지사정보</span>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="wrapBottom_Ch">
+                        <img src="https://i.ibb.co/k2bp3sc/footer-y.png" alt="footer-advertisement_icon"/>
+                        <div>
+                            <span>광고영상</span>
+                            <span>TV광고/동영상</span>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="wrapBottom_Ch">
+                        <img src="https://i.ibb.co/1Rn5DFc/footer-q.png" alt="footer-inquiry_icon"/>
+                        <div>
+                            <span>고객문의</span>
+                            <span>자주하는 질문/1:1문의</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
+
         <div class="wrapTopButton">
             <div class="topBtn" id="topBtn">
-             탑버튼
+                <span class="topBtn_triangle"></span>
+                <span class="topBtn_text">TOP</span>
             </div>
         </div>
         <footer>
-
+            <div class="footer_top">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                    <li>원쓰카드</li>
+                    <li>점주관리자</li>
+                    <li>OneAndThree Listens</li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+                <div>
+                    <ul>
+                        <li>대표이사 : 김다홍 &VerticalSeparator;</li>
+                        <li>부산광역시 해운대구 우2동 해운대로 407 신세계프라자 10층 &VerticalSeparator;</li> 
+                        <li>통신판매업신고번호 : 2020-부산해운대-0000 &VerticalSeparator;</li>
+                        <li>대표이메일 : baabmaster@baab.net &VerticalSeparator; 고객센터 : 1544 - 1234</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/XX9KC0n/image.jpg" alt="OneAndThree_instagram_shortcuts">
+                    <img src="https://i.ibb.co/BL1RghR/image.png"  alt="OneAndThree_kakaoTalk_shortcuts">
+                </div>
+            </div>
         </footer>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src="./js/index_js.js"></script>
+
     
 
 </body>

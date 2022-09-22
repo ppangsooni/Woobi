@@ -1,5 +1,5 @@
 
-// -----width=690(¸ğ¹ÙÀÏ)°æ¿ì ¸Ş´ºº¯È­-----
+// -----width=690(ëª¨ë°”ì¼)ê²½ìš° ë©”ë‰´ë³€í™”-----
 let openMenu = document.querySelector('.menu_btn'),
     slide = document.querySelector('nav'),
     closeMenu = document.querySelector('.menuClose'),
@@ -35,26 +35,53 @@ for(i=0; i<menulistClick.length; i++) {
         };
     });
 }
-
-
-// -----main_Imgbox_ ÀÌ¹ÌÁö ½½¶óÀÌµå¼î ------
-let main_banner_Img= [
+// ---- ìŠ¤í¬ë¡¤ì‹œ íš¨ê³¼ ------
+ScrollOut({
+    targets: ".oatWrap,.wrapBottom",
+    threshold: 0.5,
+    once: true,
+    onShown(el) {
+        el.classList.add("animated");
+    }
+});
+// -----main_Imgbox_ ì´ë¯¸ì§€ ìŠ¬ë¼ì´ë“œì‡¼ ------
+let main_bannerPC_Img= [
     "./img/top_baner1_PC1920x440.png",
-    "https://i.ibb.co/fXxC4j1/main-PC-1920x440-20220722110659575.jpg",
-    "https://i.ibb.co/wzG57vQ/main-PC-1920x440-20220829043050726.jpg",
+    "./img/top_baner2_PC1920x440.png",
+    "./img/top_baner3_PC1920x440.png",
     "./img/top_baner4_PC1920x440.png"
 ]   
-
+let main_bannerMB_Img= [
+    "./img/top_baner1_MB2048x2048.png",
+    "./img/top_baner2_MB2048x2048.png",
+    "./img/top_baner3_MB2048x2048.png",
+    "./img/top_baner4_MB2048x2048.png"
+]   
 let cnt = 0;
-function chage_banner_Img() {                       
-    document.querySelector('.main_banner_Img').setAttribute('src', main_banner_Img[cnt]);
-    // document.querySelector('.main_banner_Imgbox>a').setAttribute('href', ÀÌ¹ÌÁö ÀÚ¼¼È÷º¸±â ÁÖ¼Ò);
+chage_banner_Img();
+
+function chage_banner_Img() { 
+    if (window.innerWidth>=690 ) {
+        document.querySelector('.main_banner_Img').setAttribute('src', main_bannerPC_Img[cnt]);
+        // document.querySelector('.main_banner_Imgbox>a').setAttribute('href', ì´ë¯¸ì§€ ìì„¸íˆë³´ê¸° ì£¼ì†Œ);
+        cnt = cnt + 1;        
+        if( cnt == 4) {
+            cnt = 0;
+        };        
+    } else {
+        document.querySelector('.main_banner_Img').setAttribute('src', main_bannerMB_Img[cnt]);
+    // document.querySelector('.main_banner_Imgbox>a').setAttribute('href', ì´ë¯¸ì§€ ìì„¸íˆë³´ê¸° ì£¼ì†Œ);
     cnt = cnt + 1;        
     if( cnt == 4) {
         cnt = 0;
     };        
+    }                      
+    
 }
-setInterval(chage_banner_Img, 2000);
+setInterval(chage_banner_Img, 3000);
+// window.onresize=function(){
+    
+// }
 
 function currentSlide1() {
     document.querySelector('.main_banner_Img').setAttribute('src', main_banner_Img[1]);
@@ -96,31 +123,34 @@ menulistCotroll[3].addEventListener('click', () => {
     menulistTab_pm.style.display = 'none';
 });
 
-/*Section °øÅë> Initialize Swiper */
+/*Section ê³µí†µ> Initialize Swiper */
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 10,
+    slidesPerGroup: 4,
     breakpoints: {
         // when window width is >= 320px
         320: {
           slidesPerView: 2,
-          spaceBetween: 5
+          spaceBetween: 5,
+          slidesPerGroup: 2
         },
         // when window width is >= 480px
         480: {
           slidesPerView: 3,
-          spaceBetween: 8
+          spaceBetween: 8,
+          slidesPerGroup: 3
         },
         // when window width is >= 640px
         680: {
           slidesPerView: 4,
-          spaceBetween: 10
+          spaceBetween: 10,
+          slidesPerGroup: 4
         },
       },
-    slidesPerGroup: 4,
-    //loop: true>>¹İº¹ 
-    //loopFillGroupWithBlank: true, >>°ø¹é°ª
+    //loop: true>>ë°˜ë³µ 
+    //loopFillGroupWithBlank: true, >>ê³µë°±ê°’
     // loop: true,
     // loopFillGroupWithBlank: true,
     pagination: {
@@ -132,8 +162,19 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev"
     }
   });
-// ----wrapTopButton_ Å¾¹öÆ° -----
+// ----wrapTopButton_ íƒ‘ë²„íŠ¼ -----
 const topBtn = document.getElementById('topBtn');
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
 topBtn.onclick = () => {
     window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
 }
